@@ -1,0 +1,2 @@
+res path mapping:
+    res/font -> res/font

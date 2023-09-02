@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="my_library_loading">加载我的图书馆…</string>
+
+    <!-- region 收藏图书 -->
+    <string name="my_library_collection_date"><![CDATA[<b><tt>收藏时间:  </tt></b>]]></string>
+    <string name="my_library_collection_cancel_sure">从收藏中移除 《%s》?</string>
+    <string name="my_library_collection_canceling">正在从收藏中移除…</string>
+    <string name="my_library_collection_cancel_successful">从收藏中移除成功!</string>
+    <string name="my_library_collection_cancel_fail">从收藏中移除失败!</string>
+    <string name="my_library_collection_help">单击查看图书详细,长按取消收藏图书</string>
+    <!-- endregion -->
+
+    <!-- region 借阅历史 -->
+    <string name="my_library_borrow_history_loan_period"><![CDATA[<b><tt>借期:  </tt></b>]]></string>
+    <string name="my_library_borrow_history_due_date"><![CDATA[<b><tt>还期:  </tt></b>]]></string>
+    <string name="my_library_borrow_history_latest_due_date"><![CDATA[<b><tt>最晚还期:  </tt></b>]]></string>
+    <string name="my_library_borrow_history_none">当前暂无历史借阅图书</string>
+    <string name="my_library_borrow_history_download">荔园读书印记下载</string>
+    <string name="my_library_borrow_history_download_sure">是否开始下载荔园读书印记?</string>
+
+    <!-- endregion -->
+
+    <!-- region 我的预约 与 我的预借 -->
+    <string name="my_library_reservation_location_get_book"><![CDATA[<b><tt>取书地点:  </tt></b>]]></string>
+    <string name="my_library_reservation_available_date"><![CDATA[<b><tt>到馆日期:  </tt></b>]]></string>
+    <string name="my_library_reservation_latest_loan_date"><![CDATA[<b><tt>最晚取书日期:  </tt></b>]]></string>
+
+    <string name="my_library_reservation_reserve_date"><![CDATA[<b><tt>预约日期:  </tt></b>]]></string>
+    <string name="my_library_reservation_reserve_none">当前暂无预约的图书</string>
+    <string name="my_library_reservation_reserve_cancel_sure">取消预约 《%s》?</string>
+    <string name="my_library_reservation_reserve_canceling">正在取消预约…</string>
+    <string name="my_library_reservation_reserve_cancel_successful">取消预约成功!</string>
+    <string name="my_library_reservation_cancel_reserve_fail">取消预约失败!</string>
+    <string name="my_library_reservation_reserve_help">单击查看图书详细,长按取消预约图书</string>
+
+    <string name="my_library_reservation_borrow_advance_date"><![CDATA[<b><tt>预借日期:  </tt></b>]]></string>
+    <string name="my_library_reservation_borrow_advance_status"><![CDATA[<b><tt>状态:  </tt></b>]]></string>
+    <string name="my_library_reservation_borrow_advance_none">当前暂无预借的图书</string>
+    <string name="my_library_reservation_borrow_advance_can_not_cancel">该书当前的状态不能取消预借</string>
+    <string name="my_library_reservation_borrow_advance_cancel_sure">取消预借 《%s》?</string>
+    <string name="my_library_reservation_borrow_advance_canceling">正在取消预借…</string>
+    <string name="my_library_reservation_borrow_advance_cancel_successful">取消预借成功!</string>
+    <string name="my_library_reservation_borrow_advance_cancel_fail">取消预借失败!</string>
+    <string name="my_library_reservation_borrow_advance_help">单击查看图书详细,长按取消预借图书</string>
+    <!-- endregion -->
+</resources>

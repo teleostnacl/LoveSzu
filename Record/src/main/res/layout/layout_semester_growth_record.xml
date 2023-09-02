@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.record.model.SemesterModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 状态 -->
+        <androidx.cardview.widget.CardView
+            style="@style/style_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_card_view">
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/drawable_growth_record}"
+                    app:text="@{model.inSchoolStatus}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/drawable_growth_record}"
+                    app:text="@{model.reportStatus}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/drawable_growth_record}"
+                    app:text="@{model.registerStatus}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/drawable_growth_record}"
+                    app:text="@{model.payStatus}" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- 学期的成绩 -->
+        <androidx.cardview.widget.CardView
+            style="@style/style_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{model.gradeVisibility}">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_card_view">
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_title}"
+                    app:text="@{model.semesterName}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_grade}"
+                    app:text="@{model.semesterGPA}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_ranking}"
+                    app:text="@{model.semesterPM}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_ranking_percent}"
+                    app:text="@{model.semesterXDPM}" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- 学年的成绩 -->
+        <androidx.cardview.widget.CardView
+            style="@style/style_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{model.gradeVisibility}">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_card_view">
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_title}"
+                    app:text="@{model.grade}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_grade}"
+                    app:text="@{model.gradeGPA}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_ranking}"
+                    app:text="@{model.gradePM}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_ranking_percent}"
+                    app:text="@{model.gradeXDPM}" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- 全部的成绩 -->
+        <androidx.cardview.widget.CardView
+            style="@style/style_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{model.gradeVisibility}">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_card_view">
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_title}"
+                    app:text="@{model.allGrade}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_grade}"
+                    app:text="@{model.allGPA}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_ranking}"
+                    app:text="@{model.allPM}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/icon_ranking_percent}"
+                    app:text="@{model.allXDPM}" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

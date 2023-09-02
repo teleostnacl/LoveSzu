@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription">
+
+    <data>
+
+        <variable
+            name="score"
+            type="com.teleostnacl.szu.library.model.detail.ScoreModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_score_view_one"
+            style="@style/style_library_book_detail_score_constraint_layout"
+            android:onClickListener="@{score.onClickListener}">
+
+            <TextView
+                android:id="@+id/layout_score_view_one_text"
+                style="@style/style_library_book_detail_score_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scoreText="@{1}" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_one_score1"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_one_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_one_text"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_one_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider style="@style/style_library_book_detail_score_material_divider" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_score_view_two"
+            style="@style/style_library_book_detail_score_constraint_layout"
+            android:onClickListener="@{score.onClickListener}">
+
+            <TextView
+                android:id="@+id/layout_score_view_two_text"
+                style="@style/style_library_book_detail_score_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scoreText="@{2}" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_two_score1"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_two_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_two_text"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_two_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_two_score2"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_two_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_two_score1"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_two_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider style="@style/style_library_book_detail_score_material_divider" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_score_view_three"
+            style="@style/style_library_book_detail_score_constraint_layout"
+            android:onClickListener="@{score.onClickListener}">
+
+            <TextView
+                android:id="@+id/layout_score_view_three_text"
+                style="@style/style_library_book_detail_score_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scoreText="@{3}" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_three_score1"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_three_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_three_text"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_three_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_three_score2"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_three_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_three_score1"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_three_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_three_score3"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_three_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_three_score2"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_three_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider style="@style/style_library_book_detail_score_material_divider" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_score_view_four"
+            style="@style/style_library_book_detail_score_constraint_layout"
+            android:onClickListener="@{score.onClickListener}">
+
+            <TextView
+                android:id="@+id/layout_score_view_four_text"
+                style="@style/style_library_book_detail_score_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scoreText="@{4}" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_four_score1"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_four_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_four_text"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_four_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_four_score2"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_four_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_four_score1"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_four_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_four_score3"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_four_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_four_score2"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_four_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_four_score4"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_four_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_four_score3"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_four_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider style="@style/style_library_book_detail_score_material_divider" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_score_view_five"
+            style="@style/style_library_book_detail_score_constraint_layout"
+            android:onClickListener="@{score.onClickListener}">
+
+            <TextView
+                android:id="@+id/layout_score_view_five_text"
+                style="@style/style_library_book_detail_score_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scoreText="@{5}" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_five_score1"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_five_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_five_text"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_five_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_five_score2"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_five_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_five_score1"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_five_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_five_score3"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_five_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_five_score2"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_five_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_five_score4"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_five_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_five_score3"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_five_text" />
+
+            <ImageView
+                android:id="@+id/layout_score_view_five_score5"
+                style="@style/style_library_book_detail_score_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/layout_score_view_five_text"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintStart_toEndOf="@id/layout_score_view_five_score4"
+                app:layout_constraintTop_toTopOf="@id/layout_score_view_five_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>

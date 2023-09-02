@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bookModel"
+            type="com.teleostnacl.szu.library.model.detail.BookModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view">
+
+            <!-- 标题 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_title}"
+                app:text="@{bookModel.title}" />
+
+            <!-- 作者 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_author}"
+                app:text="@{bookModel.author}" />
+
+            <!-- 出版社及出版年 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_year}"
+                app:text="@{bookModel.publisherAndYear}" />
+
+            <!-- 索取号和可借 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_call_number}"
+                app:text="@{bookModel.callNumberAndCanLend}" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

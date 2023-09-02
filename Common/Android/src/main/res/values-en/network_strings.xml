@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="networklibs_network_error">Network Failed! Please check your internet!</string>
+    <string name="networklibs_network_timeout">Timeout! Please retry!</string>
+    <string name="unknown_error">Unknown Error!</string>
+</resources>

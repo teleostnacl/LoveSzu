@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_bulletin">公文通</string>
+    <string name="bulletin_loading">加载公文通…</string>
+</resources>

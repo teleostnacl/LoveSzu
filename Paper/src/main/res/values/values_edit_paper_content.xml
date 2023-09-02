@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="paper_edit_paper_content_title">编辑论文正文</string>
+
+    <string name="paper_edit_paper_content_fragment_title">编辑正文 - %s</string>
+
+    <string name="paper_edit_paper_content_add_new">添加论文正文</string>
+
+    <string name="paper_edit_paper_content_add">添加</string>
+
+    <string name="paper_edit_paper_content_first_title">一级标题</string>
+    <string name="paper_edit_paper_content_second_title">二级标题</string>
+    <string name="paper_edit_paper_content_third_title">三级标题</string>
+    <string name="paper_edit_paper_content_content">正文段</string>
+
+    <string name="paper_edit_paper_content_tips">回车可增加新的内容段, 回退可删除空白内容段\n在输入框中粘贴内容将自动以回车符进行分割文段</string>
+
+    <string name="paper_edit_paper_content_covert_to_picture">是否将此段转为图片(将丢失该段的文本信息)?</string>
+
+    <string name="paper_edit_paper_content_choose_picture">请选择一张图片</string>
+    <string name="paper_edit_paper_content_choose_picture_empty">未选择图片</string>
+    <string name="paper_edit_paper_content_choose_legend_hint">请输入图例内容</string>
+</resources>

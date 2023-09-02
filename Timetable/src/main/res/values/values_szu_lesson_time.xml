@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="szu_start_time_new">
+        <item>08:30</item>
+        <item>09:15</item>
+        <item>10:15</item>
+        <item>11:00</item>
+        <item>11:45</item>
+
+        <item>13:30</item>
+        <item>14:15</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>16:45</item>
+
+        <item>19:00</item>
+        <item>19:40</item>
+        <item>20:30</item>
+        <item>21:10</item>
+    </string-array>
+
+    <string-array name="szu_end_time_new">
+        <item>09:10</item>
+        <item>09:55</item>
+        <item>10:55</item>
+        <item>11:40</item>
+        <item>12:25</item>
+
+        <item>14:10</item>
+        <item>14:55</item>
+        <item>15:40</item>
+        <item>16:40</item>
+        <item>17:25</item>
+
+        <item>19:40</item>
+        <item>20:20</item>
+        <item>21:10</item>
+        <item>21:50</item>
+    </string-array>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 预约预借图书使用的Fragment -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Autofill,LabelFor">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.teleostnacl.szu.library.model.detail.BookModel" />
+
+        <variable
+            name="reserveModel"
+            type="com.teleostnacl.szu.library.model.detail.ReserveModel" />
+
+        <!-- 是否为预约 是为预约 否为预借 -->
+        <variable
+            name="reserve"
+            type="boolean" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fragment_library_book_reserve_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@{reserve?@string/book_detail_fragment_menu_reserve:@string/book_detail_fragment_menu_borrowing_advanced}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:background="@color/light_white_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="24dp">
+
+                <include
+                    layout="@layout/fragment_library_book_detail_layout_basic_information"
+                    app:book="@{book}" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/style_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="@dimen/padding_card_view"
+                        android:text="@{reserve?@string/book_detail_fragment_reserve_tip:@string/book_detail_fragment_borrow_advance_tip}"
+                        android:textColor="@color/text_color_common" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/style_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_card_view">
+
+                        <!-- 卷期 -->
+                        <TextView
+                            android:id="@+id/fragment_library_book_reserve_volume_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:padding="8dp"
+                            android:text="@string/book_detail_fragment_volume"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:visibility="@{reserveModel.volumeVisibility}"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Spinner
+                            android:id="@+id/fragment_library_book_reserve_volume_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:visibility="@{reserveModel.volumeVisibility}"
+                            app:layout_constraintBottom_toBottomOf="@id/fragment_library_book_reserve_volume_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@id/fragment_library_book_reserve_volume_text"
+                            app:layout_constraintTop_toTopOf="@id/fragment_library_book_reserve_volume_text" />
+
+                        <!-- 取书地点 -->
+                        <TextView
+                            android:id="@+id/fragment_library_book_reserve_place_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:padding="8dp"
+                            android:text="@string/book_detail_fragment_place"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/fragment_library_book_reserve_volume_text" />
+
+                        <Spinner
+                            android:id="@+id/fragment_library_book_reserve_place_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/fragment_library_book_reserve_place_text" />
+
+                        <!-- Email -->
+                        <TextView
+                            android:id="@+id/fragment_library_book_reserve_email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:padding="8dp"
+                            android:text="@string/book_detail_fragment_email"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/fragment_library_book_reserve_place_spinner" />
+
+                        <EditText
+                            android:id="@+id/fragment_library_book_reserve_email"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="end"
+                            android:inputType="textEmailAddress"
+                            android:paddingVertical="8dp"
+                            android:singleLine="true"
+                            android:text="@={reserveModel.email}"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@id/fragment_library_book_reserve_email_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/fragment_library_book_reserve_email_text"
+                            app:layout_constraintTop_toTopOf="@id/fragment_library_book_reserve_email_text" />
+
+                        <TextView
+                            android:id="@+id/fragment_library_book_reserve_email_tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingHorizontal="8dp"
+                            android:text="@string/book_detail_fragment_email_tip"
+                            android:textSize="11sp"
+                            app:layout_constraintTop_toBottomOf="@id/fragment_library_book_reserve_email" />
+
+                        <!-- 电话 -->
+                        <TextView
+                            android:id="@+id/fragment_library_book_reserve_phone_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:padding="8dp"
+                            android:text="@string/book_detail_fragment_phone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:visibility="@{reserve?View.GONE:View.VISIBLE}"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/fragment_library_book_reserve_email_tip" />
+
+                        <EditText
+                            android:id="@+id/fragment_library_book_reserve_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="end"
+                            android:inputType="phone"
+                            android:paddingVertical="8dp"
+                            android:singleLine="true"
+                            android:text="@={reserveModel.phone}"
+                            android:textSize="16sp"
+                            android:visibility="@{reserve?View.GONE:View.VISIBLE}"
+                            app:layout_constraintBottom_toBottomOf="@id/fragment_library_book_reserve_phone_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/fragment_library_book_reserve_phone_text"
+                            app:layout_constraintTop_toTopOf="@id/fragment_library_book_reserve_phone_text" />
+
+                        <TextView
+                            android:id="@+id/fragment_library_book_reserve_phone_tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingHorizontal="8dp"
+                            android:text="@string/book_detail_fragment_phone_tip"
+                            android:textSize="11sp"
+                            android:visibility="@{reserve?View.GONE:View.VISIBLE}"
+                            app:layout_constraintTop_toBottomOf="@id/fragment_library_book_reserve_phone" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_library_book_reserve_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{reserve?@string/bool_detail_fragment_submit_reserve:@string/book_detail_fragment_submit_borrow_advance}"
+                    app:neumorph_backgroundColor="@color/white"
+                    app:neumorph_shadowColorLight="@color/light_white_background"
+                    style="@style/Widget.Neumorph.Button"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/background_library_list_fragment_check_box_vector">
+
+    <target
+        android:animation="@animator/animator_library_list_fragment_check_box_ok_to_unchecked"
+        android:name="check_box_ok"/>
+
+    <target
+        android:animation="@animator/animator_library_list_fragment_check_box_fill_alpha_to_0"
+        android:name="check_box_background_checked"/>
+
+    <target
+        android:animation="@animator/animator_library_list_fragment_check_box_stroke_alpha_to_1"
+        android:name="check_box_background_unchecked"/>
+
+</animated-vector>

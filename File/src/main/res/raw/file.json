@@ -1,0 +1,835 @@
+[
+  {
+    "name": "学生请假申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E8%AF%B7%E5%81%87%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E8%AF%B7%E5%81%87%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "实验报告",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.doc"
+  },
+  {
+    "name": "以论文、报告等形式考核专用答题纸",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822028"
+  },
+  {
+    "name": "深圳大学专业实习报告",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7669624"
+  },
+  {
+    "name": "深圳大学本科生思政与社会实践考核表（2021级起适用）",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7865568"
+  },
+  {
+    "name": "深圳大学借用教室申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7865569"
+  },
+  {
+    "name": "免听申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=11933215"
+  },
+  {
+    "name": "免修考试申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=11933218"
+  },
+  {
+    "name": "成绩等级制与百分制对照说明（2015级及以后）",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874931"
+  },
+  {
+    "name": "深圳大学优秀毕业生推荐表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=3700462"
+  },
+  {
+    "name": "学生住宿申请表",
+    "format": "doc",
+    "url": "https://xszs.szu.edu.cn/Public/file/%E5%AD%A6%E7%94%9F%E4%BD%8F%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://xszs.webvpn.szu.edu.cn/Public/file/%E5%AD%A6%E7%94%9F%E4%BD%8F%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "学生调宿申请表",
+    "format": "doc",
+    "url": "https://xszs.szu.edu.cn/Public/file/%E5%AD%A6%E7%94%9F%E8%B0%83%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://xszs.webvpn.szu.edu.cn/Public/file/%E5%AD%A6%E7%94%9F%E8%B0%83%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "学生退宿申请表",
+    "format": "doc",
+    "url": "https://xszs.szu.edu.cn/Public/file/%E5%AD%A6%E7%94%9F%E9%80%80%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://xszs.webvpn.szu.edu.cn/Public/file/%E5%AD%A6%E7%94%9F%E9%80%80%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "保留床位申请表",
+    "format": "doc",
+    "url": "https://xszs.szu.edu.cn/Public/file/%E4%BF%9D%E7%95%99%E5%BA%8A%E4%BD%8D%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://xszs.webvpn.szu.edu.cn/Public/file/%E4%BF%9D%E7%95%99%E5%BA%8A%E4%BD%8D%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "恢复入学资格申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874239"
+  },
+  {
+    "name": "保留入学资格申请表(创业或出国留学)",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874236"
+  },
+  {
+    "name": "保留入学资格申请表(因病)",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874237"
+  },
+  {
+    "name": "复学申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874191"
+  },
+  {
+    "name": "延期毕业申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874235"
+  },
+  {
+    "name": "休学申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=4718843"
+  },
+  {
+    "name": "退学申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874188"
+  },
+  {
+    "name": "深圳大学学生创造性成果学分奖励申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874227"
+  },
+  {
+    "name": "交换生课程学分认定学生申请书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874226"
+  },
+  {
+    "name": "深圳大学朝夕楼申请表（2023.02制）",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%9C%9D%E5%A4%95%E6%A5%BC%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882023.02%E5%88%B6%EF%BC%89%281%29.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%9C%9D%E5%A4%95%E6%A5%BC%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882023.02%E5%88%B6%EF%BC%89%281%29.doc"
+  },
+  {
+    "name": "大学生医保补缴申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8C%BB%E4%BF%9D%E8%B4%B9%E8%A1%A5%E7%BC%B4%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8C%BB%E4%BF%9D%E8%B4%B9%E8%A1%A5%E7%BC%B4%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "活动场地申请流程（2022.11制）",
+    "format": "pdf",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B4%BB%E5%8A%A8%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B.pdf",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B4%BB%E5%8A%A8%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B.pdf"
+  },
+  {
+    "name": "深圳大学斋区学生活动室申请表(2022.10制)",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%96%8B%E5%8C%BA%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E5%AE%A4%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882022.10%E5%88%B6%EF%BC%89.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%96%8B%E5%8C%BA%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E5%AE%A4%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882022.10%E5%88%B6%EF%BC%89.docx"
+  },
+  {
+    "name": "硕士研究生等级制与百分制换算表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E7%BB%A9%E7%82%B9%E7%A1%95%E5%A3%AB%E7%A0%94%E7%A9%B6%E7%94%9F%E7%AD%89%E7%BA%A7%E5%88%B6%E4%B8%8E%E7%99%BE%E5%88%86%E5%88%B6%E6%8D%A2%E7%AE%97%E8%A1%A8%EF%BC%88%E4%B8%AD%E6%96%87%EF%BC%89.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E7%BB%A9%E7%82%B9%E7%A1%95%E5%A3%AB%E7%A0%94%E7%A9%B6%E7%94%9F%E7%AD%89%E7%BA%A7%E5%88%B6%E4%B8%8E%E7%99%BE%E5%88%86%E5%88%B6%E6%8D%A2%E7%AE%97%E8%A1%A8%EF%BC%88%E4%B8%AD%E6%96%87%EF%BC%89.doc"
+  },
+  {
+    "name": "校园活动教室申请表(2022.09制)",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%A0%A1%E5%9B%AD%E6%B4%BB%E5%8A%A8%E6%95%99%E5%AE%A4%E7%94%B3%E8%AF%B7%E8%A1%A8%282022.09%E5%88%B6%29.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%A0%A1%E5%9B%AD%E6%B4%BB%E5%8A%A8%E6%95%99%E5%AE%A4%E7%94%B3%E8%AF%B7%E8%A1%A8%282022.09%E5%88%B6%29.doc"
+  },
+  {
+    "name": "深圳大学校园露天活动场地申请表 （2022.09制）",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E9%9C%B2%E5%A4%A9%E6%B4%BB%E5%8A%A8%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8+%EF%BC%882022.09%E5%88%B6%EF%BC%89.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E9%9C%B2%E5%A4%A9%E6%B4%BB%E5%8A%A8%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8+%EF%BC%882022.09%E5%88%B6%EF%BC%89.docx"
+  },
+  {
+    "name": "无选课证明",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%97%A0%E9%80%89%E8%AF%BE%E8%AF%81%E6%98%8E.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%97%A0%E9%80%89%E8%AF%BE%E8%AF%81%E6%98%8E.docx"
+  },
+  {
+    "name": "教务窗口·委托书模板",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%95%99%E5%8A%A1%E7%AA%97%E5%8F%A3%E2%80%94%E5%A7%94%E6%89%98%E4%B9%A6%E6%A8%A1%E6%9D%BF.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%95%99%E5%8A%A1%E7%AA%97%E5%8F%A3%E2%80%94%E5%A7%94%E6%89%98%E4%B9%A6%E6%A8%A1%E6%9D%BF.docx"
+  },
+  {
+    "name": "疫情期间补办证明书流程",
+    "format": "rar",
+    "url": "http://swzx.szu.edu.cn/attachment/%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E8%A1%A5%E5%8A%9E%E8%AF%81%E6%98%8E%E4%B9%A6%E6%B5%81%E7%A8%8B.rar",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E8%A1%A5%E5%8A%9E%E8%AF%81%E6%98%8E%E4%B9%A6%E6%B5%81%E7%A8%8B.rar"
+  },
+  {
+    "name": "深圳大学沧海校区简阅书吧场地申请表（2020.09制）",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%B2%A7%E6%B5%B7%E6%A0%A1%E5%8C%BA%E7%AE%80%E9%98%85%E4%B9%A6%E5%90%A7%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882020.09%E5%88%B6%EF%BC%89.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%B2%A7%E6%B5%B7%E6%A0%A1%E5%8C%BA%E7%AE%80%E9%98%85%E4%B9%A6%E5%90%A7%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882020.09%E5%88%B6%EF%BC%89.doc"
+  },
+  {
+    "name": "深圳大学粤海校区学生活动展览场地申请表（2020.09制）",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E7%B2%A4%E6%B5%B7%E6%A0%A1%E5%8C%BA%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E5%B1%95%E8%A7%88%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882020.09%E5%88%B6%EF%BC%89.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E7%B2%A4%E6%B5%B7%E6%A0%A1%E5%8C%BA%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E5%B1%95%E8%A7%88%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882020.09%E5%88%B6%EF%BC%89.docx"
+  },
+  {
+    "name": "深圳大学学生活动中心场地申请表（2020.09制）",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882020.09%E5%88%B6%EF%BC%89.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882020.09%E5%88%B6%EF%BC%89.doc"
+  },
+  {
+    "name": "学生事务服务中心学士服、导师服借用表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E4%BA%8B%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%B8%AD%E5%BF%83%E5%AD%A6%E5%A3%AB%E6%9C%8D%E3%80%81%E5%AF%BC%E5%B8%88%E6%9C%8D%E5%80%9F%E7%94%A8%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E4%BA%8B%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%B8%AD%E5%BF%83%E5%AD%A6%E5%A3%AB%E6%9C%8D%E3%80%81%E5%AF%BC%E5%B8%88%E6%9C%8D%E5%80%9F%E7%94%A8%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学学生赴国（境）外交流申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E8%B5%B4%E5%9B%BD%EF%BC%88%E5%A2%83%EF%BC%89%E5%A4%96%E4%BA%A4%E6%B5%81%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E8%B5%B4%E5%9B%BD%EF%BC%88%E5%A2%83%EF%BC%89%E5%A4%96%E4%BA%A4%E6%B5%81%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "疫情期间深圳大学学生上传成绩单图片",
+    "format": "pdf",
+    "url": "http://swzx.szu.edu.cn/attachment/%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E4%B8%8A%E4%BC%A0%E6%88%90%E7%BB%A9%E5%8D%95%E5%9B%BE%E7%89%87.pdf",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E4%B8%8A%E4%BC%A0%E6%88%90%E7%BB%A9%E5%8D%95%E5%9B%BE%E7%89%87.pdf"
+  },
+  {
+    "name": "深圳大学无犯罪记录证明表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%97%A0%E7%8A%AF%E7%BD%AA%E8%AE%B0%E5%BD%95%E8%AF%81%E6%98%8E%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%97%A0%E7%8A%AF%E7%BD%AA%E8%AE%B0%E5%BD%95%E8%AF%81%E6%98%8E%E8%A1%A8.doc"
+  },
+  {
+    "name": "各奖学金中英文说明",
+    "format": "zip",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%A5%96%E9%A1%B9%E4%B8%AD%E8%8B%B1%E6%96%87%E8%AF%B4%E6%98%8EPDF.zip",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%A5%96%E9%A1%B9%E4%B8%AD%E8%8B%B1%E6%96%87%E8%AF%B4%E6%98%8EPDF.zip"
+  },
+  {
+    "name": "公益之星奖项说明（中英文）",
+    "format": "pdf",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%85%AC%E7%9B%8A%E4%B9%8B%E6%98%9F%E5%A5%96%E9%A1%B9%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%96%87%EF%BC%89.pdf",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%85%AC%E7%9B%8A%E4%B9%8B%E6%98%9F%E5%A5%96%E9%A1%B9%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%96%87%EF%BC%89.pdf"
+  },
+  {
+    "name": "深圳大学本科生改派申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%94%B9%E6%B4%BE%E7%94%B3%E8%AF%B7%E8%A1%A8%E6%A8%A1%E6%9D%BF.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%94%B9%E6%B4%BE%E7%94%B3%E8%AF%B7%E8%A1%A8%E6%A8%A1%E6%9D%BF.doc"
+  },
+  {
+    "name": "补办学生证登记表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E8%A1%A5%E5%8A%9E%E5%AD%A6%E7%94%9F%E8%AF%81%E7%99%BB%E8%AE%B0%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E8%A1%A5%E5%8A%9E%E5%AD%A6%E7%94%9F%E8%AF%81%E7%99%BB%E8%AE%B0%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学校园活动场地使用与管理办法",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E3%80%8A%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E6%B4%BB%E5%8A%A8%E5%9C%BA%E5%9C%B0%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%E3%80%8B.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E3%80%8A%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E6%B4%BB%E5%8A%A8%E5%9C%BA%E5%9C%B0%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%E3%80%8B.docx"
+  },
+  {
+    "name": "2019年深圳大学家庭经济困难学生认定申请表",
+    "format": "pdf",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AE%B6%E5%BA%AD%E7%BB%8F%E6%B5%8E%E5%9B%B0%E9%9A%BE%E5%AD%A6%E7%94%9F%E8%AE%A4%E5%AE%9A%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882019%EF%BC%89.pdf",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AE%B6%E5%BA%AD%E7%BB%8F%E6%B5%8E%E5%9B%B0%E9%9A%BE%E5%AD%A6%E7%94%9F%E8%AE%A4%E5%AE%9A%E7%94%B3%E8%AF%B7%E8%A1%A8%EF%BC%882019%EF%BC%89.pdf"
+  },
+  {
+    "name": "报到证的代领委托书模板",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%8A%A5%E5%88%B0%E8%AF%81%E7%9A%84%E4%BB%A3%E9%A2%86%E5%A7%94%E6%89%98%E4%B9%A6%E6%A8%A1%E6%9D%BF.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%8A%A5%E5%88%B0%E8%AF%81%E7%9A%84%E4%BB%A3%E9%A2%86%E5%A7%94%E6%89%98%E4%B9%A6%E6%A8%A1%E6%9D%BF.doc"
+  },
+  {
+    "name": "深圳大学阅读基金申请表格",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%85%B1%E9%9D%92%E5%9B%A2%E6%A0%A1%E5%9B%AD%E6%96%87%E5%8C%96%E5%88%9B%E6%96%B0%E5%8F%91%E5%B1%95%E5%9F%BA%E9%87%91%E7%94%B3%E8%AF%B7%E8%A1%A8.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%85%B1%E9%9D%92%E5%9B%A2%E6%A0%A1%E5%9B%AD%E6%96%87%E5%8C%96%E5%88%9B%E6%96%B0%E5%8F%91%E5%B1%95%E5%9F%BA%E9%87%91%E7%94%B3%E8%AF%B7%E8%A1%A8.docx"
+  },
+  {
+    "name": "转专业申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E8%BD%AC%E4%B8%93%E4%B8%9A%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E8%BD%AC%E4%B8%93%E4%B8%9A%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "学生幼儿意外伤害保险索赔指引及给付申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/20181128%E5%AD%A6%E7%94%9F%E6%84%8F%E5%A4%96%E9%99%A9%E7%B4%A2%E8%B5%94%E6%8C%87%E5%BC%95%E5%8F%8A%E7%BB%99%E4%BB%98%E7%94%B3%E8%AF%B7%E4%B9%A6.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/20181128%E5%AD%A6%E7%94%9F%E6%84%8F%E5%A4%96%E9%99%A9%E7%B4%A2%E8%B5%94%E6%8C%87%E5%BC%95%E5%8F%8A%E7%BB%99%E4%BB%98%E7%94%B3%E8%AF%B7%E4%B9%A6.doc"
+  },
+  {
+    "name": "体质健康测试缓测表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E4%BD%93%E8%B4%A8%E5%81%A5%E5%BA%B7%E6%B5%8B%E8%AF%95%E7%BC%93%E6%B5%8B%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E4%BD%93%E8%B4%A8%E5%81%A5%E5%BA%B7%E6%B5%8B%E8%AF%95%E7%BC%93%E6%B5%8B%E8%A1%A8.doc"
+  },
+  {
+    "name": "体质健康测试免测表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E4%BD%93%E8%B4%A8%E5%81%A5%E5%BA%B7%E6%B5%8B%E8%AF%95%E5%85%8D%E6%B5%8B%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E4%BD%93%E8%B4%A8%E5%81%A5%E5%BA%B7%E6%B5%8B%E8%AF%95%E5%85%8D%E6%B5%8B%E8%A1%A8.doc"
+  },
+  {
+    "name": "体育场地申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E4%BD%93%E8%82%B2%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E4%BD%93%E8%82%B2%E5%9C%BA%E5%9C%B0%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "期末查阅试卷申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%9C%9F%E6%9C%AB%E6%9F%A5%E9%98%85%E8%AF%95%E5%8D%B7%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%9C%9F%E6%9C%AB%E6%9F%A5%E9%98%85%E8%AF%95%E5%8D%B7%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学海报张贴、横幅悬挂申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%B5%B7%E6%8A%A5%E5%BC%A0%E8%B4%B4%E3%80%81%E6%A8%AA%E5%B9%85%E6%82%AC%E6%8C%82%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E6%B5%B7%E6%8A%A5%E5%BC%A0%E8%B4%B4%E3%80%81%E6%A8%AA%E5%B9%85%E6%82%AC%E6%8C%82%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学全日制本科生学籍信息变更申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%85%A8%E6%97%A5%E5%88%B6%E6%9C%AC%E7%A7%91%E7%94%9F%E5%AD%A6%E7%B1%8D%E4%BF%A1%E6%81%AF%E5%8F%98%E6%9B%B4%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%85%A8%E6%97%A5%E5%88%B6%E6%9C%AC%E7%A7%91%E7%94%9F%E5%AD%A6%E7%B1%8D%E4%BF%A1%E6%81%AF%E5%8F%98%E6%9B%B4%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学研究生课程论文",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B%E8%AE%BA%E6%96%87.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B%E8%AE%BA%E6%96%87.doc"
+  },
+  {
+    "name": "中国人民财产保险股份有限公司保险金给付申请书",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%BF%9D%E9%99%A9%E9%87%91%E7%BB%99%E4%BB%98%E7%94%B3%E8%AF%B7%E4%B9%A6.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%BF%9D%E9%99%A9%E9%87%91%E7%BB%99%E4%BB%98%E7%94%B3%E8%AF%B7%E4%B9%A6.doc"
+  },
+  {
+    "name": "学生活动水电使用申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B4%BB%E5%8A%A8%E6%B0%B4%E7%94%B5%E4%BD%BF%E7%94%A8%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B4%BB%E5%8A%A8%E6%B0%B4%E7%94%B5%E4%BD%BF%E7%94%A8%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "双休日社会实践班级身份证统计表",
+    "format": "xls",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%8F%8C%E4%BC%91%E6%97%A5%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E7%8F%AD%E7%BA%A7%E8%BA%AB%E4%BB%BD%E8%AF%81%E7%BB%9F%E8%AE%A1%E8%A1%A8.xls",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%8F%8C%E4%BC%91%E6%97%A5%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E7%8F%AD%E7%BA%A7%E8%BA%AB%E4%BB%BD%E8%AF%81%E7%BB%9F%E8%AE%A1%E8%A1%A8.xls"
+  },
+  {
+    "name": "深圳大学团学干部团队拓展培训申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%9B%A2%E5%AD%A6%E5%B9%B2%E9%83%A8%E5%9B%A2%E9%98%9F%E6%8B%93%E5%B1%95%E5%9F%B9%E8%AE%AD%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%9B%A2%E5%AD%A6%E5%B9%B2%E9%83%A8%E5%9B%A2%E9%98%9F%E6%8B%93%E5%B1%95%E5%9F%B9%E8%AE%AD%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学西丽校区地图",
+    "format": "jpg",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E8%A5%BF%E4%B8%BD%E6%A0%A1%E5%8C%BA%E5%9C%B0%E5%9B%BE.jpg",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E8%A5%BF%E4%B8%BD%E6%A0%A1%E5%8C%BA%E5%9C%B0%E5%9B%BE.jpg"
+  },
+  {
+    "name": "深圳大学后海校区地图",
+    "format": "jpg",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%90%8E%E6%B5%B7%E6%A0%A1%E5%8C%BA%E5%9C%B0%E5%9B%BE.jpg",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%90%8E%E6%B5%B7%E6%A0%A1%E5%8C%BA%E5%9C%B0%E5%9B%BE.jpg"
+  },
+  {
+    "name": "本科生学业预警通知书(2013级使用)",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%9C%AC%E7%A7%91%E7%94%9F%E5%AD%A6%E4%B8%9A%E9%A2%84%E8%AD%A6%E9%80%9A%E7%9F%A5%E4%B9%A6%282013%E7%BA%A7%E4%BD%BF%E7%94%A8%29.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%9C%AC%E7%A7%91%E7%94%9F%E5%AD%A6%E4%B8%9A%E9%A2%84%E8%AD%A6%E9%80%9A%E7%9F%A5%E4%B9%A6%282013%E7%BA%A7%E4%BD%BF%E7%94%A8%29.doc"
+  },
+  {
+    "name": "学生选择修读专业志愿表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E9%80%89%E6%8B%A9%E4%BF%AE%E8%AF%BB%E4%B8%93%E4%B8%9A%E5%BF%97%E6%84%BF%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E9%80%89%E6%8B%A9%E4%BF%AE%E8%AF%BB%E4%B8%93%E4%B8%9A%E5%BF%97%E6%84%BF%E8%A1%A8.doc"
+  },
+  {
+    "name": "辅修学生名单汇总表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E8%BE%85%E4%BF%AE%E5%AD%A6%E7%94%9F%E5%90%8D%E5%8D%95%E6%B1%87%E6%80%BB%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E8%BE%85%E4%BF%AE%E5%AD%A6%E7%94%9F%E5%90%8D%E5%8D%95%E6%B1%87%E6%80%BB%E8%A1%A8.doc"
+  },
+  {
+    "name": "办理火车票学生优惠卡登记表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%8A%9E%E7%90%86%E7%81%AB%E8%BD%A6%E7%A5%A8%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0%E5%8D%A1%E7%99%BB%E8%AE%B0%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%8A%9E%E7%90%86%E7%81%AB%E8%BD%A6%E7%A5%A8%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0%E5%8D%A1%E7%99%BB%E8%AE%B0%E8%A1%A8.doc"
+  },
+  {
+    "name": "补办学生证登记表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E8%A1%A5%E5%8A%9E%E5%AD%A6%E7%94%9F%E8%AF%81%E7%99%BB%E8%AE%B0%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E8%A1%A5%E5%8A%9E%E5%AD%A6%E7%94%9F%E8%AF%81%E7%99%BB%E8%AE%B0%E8%A1%A8.doc"
+  },
+  {
+    "name": "外国留学生退学申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%A4%96%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E9%80%80%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%A4%96%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E9%80%80%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "双学位学生名单汇总表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%8F%8C%E5%AD%A6%E4%BD%8D%E5%AD%A6%E7%94%9F%E5%90%8D%E5%8D%95%E6%B1%87%E6%80%BB%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%8F%8C%E5%AD%A6%E4%BD%8D%E5%AD%A6%E7%94%9F%E5%90%8D%E5%8D%95%E6%B1%87%E6%80%BB%E8%A1%A8.doc"
+  },
+  {
+    "name": "双学位毕业论文（设计）过程材料附表",
+    "format": "rar",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%8F%8C%E5%AD%A6%E4%BD%8D%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E8%BF%87%E7%A8%8B%E6%9D%90%E6%96%99%E9%99%84%E8%A1%A8.rar",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%8F%8C%E5%AD%A6%E4%BD%8D%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E8%BF%87%E7%A8%8B%E6%9D%90%E6%96%99%E9%99%84%E8%A1%A8.rar"
+  },
+  {
+    "name": "毕业论文（设计）过程材料",
+    "format": "rar",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E8%BF%87%E7%A8%8B%E6%9D%90%E6%96%99.rar",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E8%BF%87%E7%A8%8B%E6%9D%90%E6%96%99.rar"
+  },
+  {
+    "name": "本科生毕业论文（设计）撰写规范及要求",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%9C%AC%E7%A7%91%E7%94%9F%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E6%92%B0%E5%86%99%E8%A7%84%E8%8C%83%E5%8F%8A%E8%A6%81%E6%B1%82.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%9C%AC%E7%A7%91%E7%94%9F%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E6%92%B0%E5%86%99%E8%A7%84%E8%8C%83%E5%8F%8A%E8%A6%81%E6%B1%82.doc"
+  },
+  {
+    "name": "本科生毕业论文（设计）工作规定",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%9C%AC%E7%A7%91%E7%94%9F%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%AE%9A.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%9C%AC%E7%A7%91%E7%94%9F%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%AE%9A.doc"
+  },
+  {
+    "name": "学生认识实习情况登记表",
+    "format": "xls",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E8%AE%A4%E8%AF%86%E5%AE%9E%E4%B9%A0%E6%83%85%E5%86%B5%E7%99%BB%E8%AE%B0%E8%A1%A8.xls",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E8%AE%A4%E8%AF%86%E5%AE%9E%E4%B9%A0%E6%83%85%E5%86%B5%E7%99%BB%E8%AE%B0%E8%A1%A8.xls"
+  },
+  {
+    "name": "教育见习（认识实习）报告",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%95%99%E8%82%B2%E8%A7%81%E4%B9%A0%EF%BC%88%E8%AE%A4%E8%AF%86%E5%AE%9E%E4%B9%A0%EF%BC%89%E6%8A%A5%E5%91%8A.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%95%99%E8%82%B2%E8%A7%81%E4%B9%A0%EF%BC%88%E8%AE%A4%E8%AF%86%E5%AE%9E%E4%B9%A0%EF%BC%89%E6%8A%A5%E5%91%8A.doc"
+  },
+  {
+    "name": "特色班选拔学生申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E7%89%B9%E8%89%B2%E7%8F%AD%E9%80%89%E6%8B%94%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E7%89%B9%E8%89%B2%E7%8F%AD%E9%80%89%E6%8B%94%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学学生创新发展基金项目申请书",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/2018928404%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%8F%91%E5%B1%95%E5%9F%BA%E9%87%91%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C%E9%A1%B9%E7%9B%AE%E7%94%B3%E8%AF%B7%E4%B9%A6.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/2018928404%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%8F%91%E5%B1%95%E5%9F%BA%E9%87%91%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C%E9%A1%B9%E7%9B%AE%E7%94%B3%E8%AF%B7%E4%B9%A6.doc"
+  },
+  {
+    "name": "个人授权委托书模板",
+    "format": "docx",
+    "url": "http://swzx.szu.edu.cn/attachment/%E4%B8%AA%E4%BA%BA%E6%8E%88%E6%9D%83%E5%A7%94%E6%89%98%E4%B9%A6%E6%A8%A1%E6%9D%BF.docx",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E4%B8%AA%E4%BA%BA%E6%8E%88%E6%9D%83%E5%A7%94%E6%89%98%E4%B9%A6%E6%A8%A1%E6%9D%BF.docx"
+  },
+  {
+    "name": "研究生改派申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%94%B9%E6%B4%BE%E7%94%B3%E8%AF%B7%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%94%B9%E6%B4%BE%E7%94%B3%E8%AF%B7%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.doc"
+  },
+  {
+    "name": "深圳大学学生 2018 年家庭经济状况评估调查表",
+    "format": "pdf",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F2018%E5%B9%B4%E5%AE%B6%E5%BA%AD%E7%BB%8F%E6%B5%8E%E7%8A%B6%E5%86%B5%E8%AF%84%E4%BC%B0%E5%AE%9A%E8%B0%83%E6%9F%A5%E8%A1%A8.pdf",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F2018%E5%B9%B4%E5%AE%B6%E5%BA%AD%E7%BB%8F%E6%B5%8E%E7%8A%B6%E5%86%B5%E8%AF%84%E4%BC%B0%E5%AE%9A%E8%B0%83%E6%9F%A5%E8%A1%A8.pdf"
+  },
+  {
+    "name": "委托书（模板）",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%A7%94%E6%89%98%E4%B9%A6%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%A7%94%E6%89%98%E4%B9%A6%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.doc"
+  },
+  {
+    "name": "解除处分申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E8%A7%A3%E9%99%A4%E5%A4%84%E5%88%86%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E8%A7%A3%E9%99%A4%E5%A4%84%E5%88%86%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "深圳大学大学生创新学分申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%AD%A6%E5%88%86%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%AD%A6%E5%88%86%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "勤工助学岗位申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%8B%A4%E5%B7%A5%E5%8A%A9%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%8B%A4%E5%B7%A5%E5%8A%A9%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "外国留学生复学申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%A4%96%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E5%A4%8D%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%A4%96%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E5%A4%8D%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "外国留学生休学申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%A4%96%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E4%BC%91%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%A4%96%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E4%BC%91%E5%AD%A6%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"
+  },
+  {
+    "name": "申请缓考登记表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E7%BC%93%E8%80%83%E7%94%B3%E8%AF%B7.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E7%BC%93%E8%80%83%E7%94%B3%E8%AF%B7.doc"
+  },
+  {
+    "name": "出国留学保留学籍申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%87%BA%E5%9B%BD%E4%BF%9D%E7%95%99%E5%AD%A6%E7%B1%8D.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%87%BA%E5%9B%BD%E4%BF%9D%E7%95%99%E5%AD%A6%E7%B1%8D.doc"
+  },
+  {
+    "name": "预退宿申请表",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E9%A2%84%E9%80%80%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E9%A2%84%E9%80%80%E5%AE%BF%E7%94%B3%E8%AF%B7%E8%A1%A8.doc"},
+  {
+    "name": "大学生意外伤害险索赔流程",
+    "format": "doc",
+    "url": "http://swzx.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E4%BA%BA%E8%BA%AB%E6%84%8F%E5%A4%96%E4%BC%A4%E5%AE%B3%E4%BF%9D%E9%99%A9%E7%B4%A2%E8%B5%94%E6%B5%81%E7%A8%8B.doc",
+    "web_vpn_url": "https://swzx.webvpn.szu.edu.cn/attachment/%E5%AD%A6%E7%94%9F%E4%BA%BA%E8%BA%AB%E6%84%8F%E5%A4%96%E4%BC%A4%E5%AE%B3%E4%BF%9D%E9%99%A9%E7%B4%A2%E8%B5%94%E6%B5%81%E7%A8%8B.doc"
+  },
+  {
+    "name": "大学生创新训练项目申报书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874318"
+  },
+  {
+    "name": "大学生创业实践项目申报书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874319"
+  },
+  {
+    "name": "大学生创业训练项目申报书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874320"
+  },
+  {
+    "name": "大学生创新创业训练计划项目中期报告表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874316"
+  },
+  {
+    "name": "大学生创新创业训练计划项目中期检查专家评审表",
+    "format": "docx",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874317"
+  },
+  {
+    "name": "广东省大学生创新训练项目结题验收书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874313"
+  },
+  {
+    "name": "广东省大学生创业实践项目结题验收书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874314"
+  },
+  {
+    "name": "广东省大学生创业训练项目结题验收书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874315"
+  },
+  {
+    "name": "深圳大学教学计划变动申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822027"
+  },
+  {
+    "name": "深圳大学教学计划取消（合并）课程申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822026"
+  },
+  {
+    "name": "深圳大学调(停)课、任课教师变更申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822024"
+  },
+  {
+    "name": "协助开课申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822023"
+  },
+  {
+    "name": "深圳大学教学计划新增课程申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822022"
+  },
+  {
+    "name": "学院自行安排期末考试一览表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822020"
+  },
+  {
+    "name": "主讲教师资格认定申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822021"
+  },
+  {
+    "name": "期末考试查阅试卷申请表",
+    "format": "docx",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=5151591"
+  },
+  {
+    "name": "2018版深圳大学课程试卷标准格式",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2822033"
+  },
+  {
+    "name": "深圳大学期末考试特殊考试方式审批表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=5151605"
+  },
+  {
+    "name": "成绩等级制与百分制对照说明（2014级及以前）",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874930"
+  },
+  {
+    "name": "毕业生电子图像采集卡填涂注意事项",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874271"
+  },
+  {
+    "name": "双专业学生名单汇总表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874268"
+  },
+  {
+    "name": "学业预警黄牌",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874234"
+  },
+  {
+    "name": "学业黄牌",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874233"
+  },
+  {
+    "name": "托福雅思成绩转换认定申请书",
+    "format": "docx",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7665848"
+  },
+  {
+    "name": "双专业学生名单汇总表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874230"
+  },
+  {
+    "name": "取得辅修专业申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874247"
+  },
+  {
+    "name": "取得结业资格申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874246"
+  },
+  {
+    "name": "取得双学位申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874245"
+  },
+  {
+    "name": "取得双专业申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874244"
+  },
+  {
+    "name": "取得学士学位资格申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874243"
+  },
+  {
+    "name": "特色班选拔学生申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874240"
+  },
+  {
+    "name": "本科生修读双学位申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874223"
+  },
+  {
+    "name": "取得毕业资格申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874248"
+  },
+  {
+    "name": "取得肄业资格申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874242"
+  },
+  {
+    "name": "修读辅修专业申请表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874222"
+  },
+  {
+    "name": "免听学生名单汇总表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874220"
+  },
+  {
+    "name": "深圳大学教材出版资助申报表",
+    "format": "docx",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2873893"
+  },
+  {
+    "name": "深圳大学讲义印刷申请表",
+    "format": "docx",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2873894"
+  },
+  {
+    "name": "师范生教育实习质量反馈表",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7669623"
+  },
+  {
+    "name": "深圳大学本科学生专业实习情况登记表（非师范）",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7669621"
+  },
+  {
+    "name": "深圳大学本科学生专业实习情况登记表(师范类)",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7669622"
+  },
+  {
+    "name": "深圳大学实习单位意见反馈表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=7669625"
+  },
+  {
+    "name": "编写实验教学大纲的基本格式与要求",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874328"
+  },
+  {
+    "name": "课程实验开出率统计表",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874327"
+  },
+  {
+    "name": "深圳大学实验教学安排表",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874326"
+  },
+  {
+    "name": "学院分专业（大类）专业实验课情况（学年）",
+    "format": "xlsx",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874325"
+  },
+  {
+    "name": "综合性、设计性与探索研究性实验项目申报书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874324"
+  },
+  {
+    "name": "综合性、设计性与探索研究性实验项目结题书",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874323"
+  },
+  {
+    "name": "深圳大学校外实习基地建设申请书",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874322"
+  },
+  {
+    "name": "深圳大学本科生社会实践国际交流考核表（2017级起适用）",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874321"
+  },
+  {
+    "name": "毕业论文查阅表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874312"
+  },
+  {
+    "name": "毕业论文工作管理检查记录表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874311"
+  },
+  {
+    "name": "毕业设计查阅表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874310"
+  },
+  {
+    "name": "深圳大学教学进度表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874309"
+  },
+  {
+    "name": "深圳大学领导干部听课评价表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874308"
+  },
+  {
+    "name": "深圳大学实践报告检查记录表",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874307"
+  },
+  {
+    "name": "深圳大学实习报告、实习情况登记表检查记录表",
+    "format": "xls",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874306"
+  },
+  {
+    "name": "深圳大学实验报告检查记录表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874305"
+  },
+  {
+    "name": "深圳大学实验听课记录表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874304"
+  },
+  {
+    "name": "深圳大学试卷检查记录表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874303"
+  },
+  {
+    "name": "深圳大学听课评价表",
+    "format": "doc",
+    "url": "https://jwb.szu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1487863170&wbfileid=2874302"
+  }
+]

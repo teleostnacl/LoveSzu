@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.scheme.model.SchemeDetailModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/fragment_scheme_detail_main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:subtitle="@{model.titleCredits}"
+                app:title="@{model.name}" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/fragment_scheme_detail_main_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                app:tabBackground="@color/transparent"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/szu_red"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@color/szu_red"
+                app:tabSelectedTextColor="@color/text_color_common" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/fragment_scheme_detail_main_view_page2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_white_background"
+            android:nestedScrollingEnabled="true" />
+
+    </LinearLayout>
+</layout>

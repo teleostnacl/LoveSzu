@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 编辑引用的Dialog使用的Layout -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.paper.model.QuotationModel" />
+
+    </data>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_edit_paper_content_key"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+        android:hint="@string/paper_edit_paper_content_edit_quotation_hint"
+        android:paddingHorizontal="12dp"
+        app:expandedHintEnabled="false">
+
+        <com.teleostnacl.szu.paper.view.edittext.EditContentSimpleTextEditText
+            android:id="@+id/item_edit_paper_content_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:text="@{model.quotation}" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</layout>

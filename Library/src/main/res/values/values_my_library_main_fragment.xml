@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="my_library_main_fragment_title">我的图书馆</string>
+
+    <string name="my_library_main_fragment_tip">长按卡片可取消图书的预约/预借/收藏!</string>
+
+    <string-array name="my_library_main_fragment_tabs">
+        <item>个人信息</item>
+        <item>当前借阅</item>
+        <item>借书历史</item>
+        <item>预约的图书</item>
+        <item>预借的图书</item>
+        <item>收藏图书</item>
+    </string-array>
+
+    <string name="my_library_user_info_basic_information">基本信息</string>
+    <string name="my_library_user_info_name">姓名:&#160;</string>
+    <string name="my_library_user_info_no">证号:&#160;</string>
+    <string name="my_library_user_info_institution">单位:&#160;</string>
+    <string name="my_library_user_info_type">类型:&#160;</string>
+
+    <string name="my_library_user_info_contact_information">联系方式</string>
+    <string name="my_library_user_info_phone">电话:&#160;</string>
+    <string name="my_library_user_info_mobile">手机:&#160;</string>
+    <string name="my_library_user_info_email">邮箱:&#160;</string>
+    <string name="my_library_user_info_edit_contact_information_title">修改联系方式</string>
+    <string name="my_library_user_info_edit_contact_information">修改联系方式 > </string>
+    <string name="my_library_user_info_edit_contact_information_tips">图书馆将会通过您留下的联系方式与您联系</string>
+    <string name="my_library_user_info_edit">修改</string>
+    <string name="my_library_user_info_email_error">邮箱为空或格式有误, 请检查!</string>
+    <string name="my_library_user_info_modifying">正在修改联系方式…</string>
+    <string name="my_library_user_info_modify_successful">修改联系方式成功!</string>
+    <string name="my_library_user_info_modify_fail">修改联系方式失败!</string>
+
+    <string name="my_library_user_info_others">其它</string>
+    <string name="my_library_user_info_status">当前状态:&#160;</string>
+    <string name="my_library_user_info_notes">备注:&#160;</string>
+    <string name="my_library_user_info_deposit_balance">预存金额:&#160;</string>
+    <string name="my_library_user_info_points">积分:&#160;</string>
+
+    <style name="style_modify_user_info_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color_common</item>
+        <item name="android:paddingVertical">16dp</item>
+    </style>
+</resources>

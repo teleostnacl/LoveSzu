@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/paper_edit_content_menu_help"
+        android:icon="@drawable/icon_szu_help"
+        android:title="@string/help"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/paper_edit_content_menu_save"
+        android:icon="@drawable/icon_edit_paper_content_save"
+        android:title="@string/save"
+        app:showAsAction="ifRoom" />
+</menu>

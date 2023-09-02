@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="lesson"
+            type="com.teleostnacl.szu.timetable.model.Lesson" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:padding="3dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@{lesson.backgroundColor}"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="3dp">
+
+                <TextView
+                    android:id="@+id/lesson_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:text="@{lesson.lessonName}"
+                    android:textColor="@{lesson.textColor}"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lesson_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@{lesson.location}"
+                    android:textColor="@{lesson.textColor}"
+                    android:textSize="12sp"
+                    app:visibility_by_string="@{lesson.location}" />
+
+                <TextView
+                    android:id="@+id/lesson_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@{lesson.teacher}"
+                    android:textColor="@{lesson.textColor}"
+                    android:textSize="11sp"
+                    app:visibility_by_string="@{lesson.teacher}" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</layout>

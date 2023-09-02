@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region 排序方式 -->
+    <string name="M_TITLE">Title</string>
+    <string name="M_PUBLISHER">Publisher</string>
+    <string name="M_PUB_YEAR">Publisher Year</string>
+    <string name="M_AUTHOR">Author</string>
+    <string name="M_SUBJECT">Subject Terms</string>
+    <string name="M_CLC">Classification Code</string>
+    <string name="M_CATALOGDATE">Arrival Date</string>
+    <string name="search_result_DESC">Descending Order</string>
+    <string name="search_result_ASC">Ascending Order</string>
+    <!-- endregion -->
+
+    <!-- region 检索方式 -->
+    <string name="ANYWORDS">Keywords anywhere</string>
+    <string name="TITLEFORWARD">Title beginning with…</string>
+    <string name="TITLEANY">Title Keywords</string>
+    <string name="AUTHORFORWARD">Author (last name first)</string>
+    <string name="AUTHORANY">Author keywords</string>
+    <string name="KEYWORDFORWARD">Subject Terms/Keywords</string>
+    <string name="PUBLISHERFORWARD">Publisher name</string>
+    <string name="CLCFORWARD">CLC</string>
+    <string name="ISBNFORWARD">ISBN</string>
+    <string name="ISSNFORWARD">ISSN</string>
+    <string name="CALLNOFORWARD">Call Number</string>
+
+    <string name="ANYWORDS_tip">Search in any field (title/author/note/content fields, etc.) of bibliographies by using any word.</string>
+    <string name="TITLEFORWARD_tip">Search in title fields (book/periodical/series title, etc.)  of bibliographies by using some beginning words of title.</string>
+    <string name="TITLEANY_tip">Search in title fields (book/periodical/series title, etc.)  of bibliographies by using any keyword of title.</string>
+    <string name="AUTHORFORWARD_tip">Search in author fields (personal/family/organization/meeting name, etc.) of bibliographies by using the last name first.</string>
+    <string name="AUTHORANY_tip">Search in author fields (personal/family/organization/meeting name, etc.) of bibliographies by using any keyword of author name.</string>
+    <string name="KEYWORDFORWARD_tip">Search in subject fields (subjects/keywords, etc.) of bibliographies by using any subject term or keyword. Such as: programming</string>
+    <string name="PUBLISHERFORWARD_tip">Search in publisher fields of bibliographies by using publisher name. Such as Harvard University Press, Boker, etc.</string>
+    <string name="CLCFORWARD_tip">Search in class fields of bibliographies by using Chinese Classification Code. Such as TP311</string>
+    <string name="ISBNFORWARD_tip">Search in number fields of bibliographies by using ISBN (International Standard Book Number). Such as: 7–121–03217–1, 978–7–301–13449–8</string>
+    <string name="ISSNFORWARD_tip">Search in number fields of bibliographies by using ISSN (International Standard Series Number). Such as 0253–41777</string>
+    <string name="CALLNOFORWARD_tip">Search in collect fields of bibliographies by using Call Number.  Call Number consists of classification code and distinguish code, and separated by \'/\'. Such as B9–43/M12</string>
+    <!-- endregion -->
+
+    <!-- region 限制搜索范围 -->
+    <string name="library_search_result_search_in_condition">Search In Condition</string>
+    <string name="library_search_result_sum">Results: %s</string>
+    <string name="library_search_result_only_show_lend">Only Show Books Can Lend</string>
+    <string name="library_search_result_sort_way">Sort Way</string>
+    <string name="library_search_result_category">Category</string>
+    <string name="library_search_result_document_type">Document Type</string>
+    <string name="library_search_result_collection_site">Collection Site</string>
+    <string name="library_search_result_publication_date">Publication Date</string>
+    <!-- endregion -->
+</resources>

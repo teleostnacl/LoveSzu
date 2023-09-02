@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.electricity.model.ElectricityDateModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.floatingRemain}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.floatingUsingSum}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.floatingBuyingSum}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.floatingUsing}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            android:visibility="@{model.floatingBuyingVisible}"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.floatingBuying}" />
+
+    </LinearLayout>
+</layout>

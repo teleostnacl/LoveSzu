@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 图书详细页借阅信息使用的View -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.teleostnacl.szu.library.model.detail.BookModel" />
+
+        <import type="android.view.View" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view">
+
+            <!-- 总借阅次数 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_loan_num}"
+                app:text="@{book.loanTotal}" />
+
+            <!-- 总收藏次数 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_collect_num}"
+                app:text="@{book.collectTotal}" />
+
+            <!-- 总评分次数 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_score_num}"
+                app:text="@{book.totalVotesString}" />
+
+            <!-- 总评分 -->
+            <include
+                layout="@layout/layout_fragment_library_book_detail_score"
+                android:visibility="@{book.totalVotes > 0 &amp;&amp;book.score > -1 ? View.VISIBLE : View.GONE}"
+                app:score="@{book.score}"
+                app:title="@{@string/book_detail_fragment_score_average}" />
+
+            <!-- 我的评分 -->
+            <include
+                layout="@layout/layout_fragment_library_book_detail_score"
+                android:visibility="@{book.myScore > 0 &amp;&amp;book.score > -1 ? View.VISIBLE : View.GONE}"
+                app:score="@{book.myScore}"
+                app:title="@{@string/book_detail_fragment_my_score}" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

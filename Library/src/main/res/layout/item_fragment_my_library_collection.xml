@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 我的图书馆 收藏的item -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.teleostnacl.szu.library.model.user.CollectionModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view">
+
+            <!-- 书目信息 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_title}"
+                app:text="@{book.title}" />
+
+            <!-- 索取号 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_call_number}"
+                app:text="@{book.callNumber}" />
+
+            <!-- 可借 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_can_lend}"
+                app:text="@{book.canLend}" />
+
+            <!-- 收藏时间 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_date}"
+                app:text="@{book.collectionTime}" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp" />
+
+            <!-- 馆藏地 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_shelve_reference}"
+                app:text="@{book.collectionSiteTitle}" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginStart="12dp"
+                android:text="@{book.collectionSite}"
+                android:textColor="@color/text_color_common" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

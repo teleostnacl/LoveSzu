@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="paper_edit_paper_content_edit_quotation">编辑参考文献</string>
+    <string name="paper_edit_paper_content_edit_quotation_title">编辑参考文献 - %s</string>
+    <string name="paper_edit_paper_content_edit_quotation_hint">参考文献(不为空)</string>
+    <string name="paper_edit_paper_content_edit_quotation_empty_error">参考文献不能为空</string>
+    <string name="paper_edit_paper_content_edit_quotation_repeat_error">参考文献重复, 请检查</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.paper.model.PaperModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fragment_edit_paper_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/padding_horizontal_paper_edit_paper">
+
+                <!-- 编辑论文封面 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_edit_paper_cover"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_cover_title" />
+
+                <!-- 编辑论文封面 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_edit_paper_basic_information"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_basic_information_title" />
+
+                <!-- 编辑论文正文 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_edit_content"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_content_title" />
+
+                <!-- 编辑论文参考文献 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_edit_quotation"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_content_edit_quotation" />
+
+                <!-- 自动生成图片图例的编号 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_auto_generate_picture_no"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@{model.autoGeneratePictureNo?@string/paper_edit_paper_auto_generate_picture_no_true:@string/paper_edit_paper_auto_generate_picture_no_false}" />
+
+                <!-- 导出论文 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_export"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_export" />
+
+                <!-- 分享论文 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_share"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_share"
+                    android:visibility="@{model.createSuccess ? View.VISIBLE : View.GONE}" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

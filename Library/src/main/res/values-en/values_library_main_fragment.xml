@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_library_main_search_tips">Please enter keywords</string>
+
+    <string name="fragment_library_main_search_hot_keys">Hot Keys</string>
+    <string name="fragment_library_main_search_hot_loan">Hot Loans</string>
+</resources>

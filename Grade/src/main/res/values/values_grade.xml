@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 展示成绩的资源 -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="grade_lesson_no"><![CDATA[<b><tt>课程号:  </tt></b>]]></string>
+    <string name="grade_lesson_name"><![CDATA[<b><tt>课程名:  </tt></b>]]></string>
+    <string name="grade_lesson_credit"><![CDATA[<b><tt>学分:  </tt></b>]]></string>
+    <string name="grade_lesson_credit_get"><![CDATA[<b><tt>  取得学分:  </tt></b>]]></string>
+    <string name="grade_lesson_grade"><![CDATA[<b><tt>成绩:  </tt></b>]]></string>
+    <string name="grade_lesson_points"><![CDATA[<b><tt>  绩点:  </tt></b>]]></string>
+    <string name="grade_lesson_grade_points"><![CDATA[<b><tt>  学分绩点:  </tt></b>]]></string>
+    <string name="grade_lesson_tips"><![CDATA[<b><tt>特殊原因:  </tt></b>]]></string>
+
+    <string name="grade_lesson_credit_average"><![CDATA[<b><tt>所选学分:  </tt></b>]]></string>
+    <string name="grade_lesson_credit_get_average"><![CDATA[<b><tt>  取得学分:  </tt></b>]]></string>
+    <string name="grade_lesson_percent_average"><![CDATA[<b><tt>  占百分比:  </tt></b>]]></string>
+    <string name="grade_lesson_grade_points_average"><![CDATA[<b><tt>平均学分绩点:  </tt></b>]]></string>
+</resources>

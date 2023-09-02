@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_paper"
+    app:startDestination="@id/editPaperFragment">
+
+    <fragment
+        android:id="@+id/editPaperFragment"
+        android:name="com.teleostnacl.szu.paper.fragment.EditPaperFragment"
+        android:label="EditPaperFragment">
+        <action
+            android:id="@+id/action_editPaperFragment_to_editPaperContentFragment"
+            app:destination="@id/editPaperContentFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+        <action
+            android:id="@+id/action_editPaperFragment_to_editPaperBasicInformation"
+            app:destination="@id/editPaperBasicInformation"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+        <action
+            android:id="@+id/action_editPaperFragment_to_editPaperCoverFragment"
+            app:destination="@id/editPaperCoverFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+        <action
+            android:id="@+id/action_editPaperFragment_to_editPaperQuotationFragment"
+            app:destination="@id/editPaperQuotationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPaperCoverFragment"
+        android:name="com.teleostnacl.szu.paper.fragment.EditPaperCoverFragment"
+        android:label="EditPaperCoverFragment" />
+    <fragment
+        android:id="@+id/editPaperBasicInformation"
+        android:name="com.teleostnacl.szu.paper.fragment.EditPaperBasicInformationFragment"
+        android:label="EditPaperBasicInformation" />
+    <fragment
+        android:id="@+id/editPaperContentFragment"
+        android:name="com.teleostnacl.szu.paper.fragment.EditPaperContentFragment"
+        android:label="EditPaperContentFragment" />
+    <fragment
+        android:id="@+id/editPaperQuotationFragment"
+        android:name="com.teleostnacl.szu.paper.fragment.EditPaperQuotationFragment"
+        android:label="EditPaperQuotationFragment" />
+
+</navigation>

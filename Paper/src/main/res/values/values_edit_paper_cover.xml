@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="paper_edit_paper_cover_title">编辑论文封面</string>
+
+    <string name="paper_edit_paper_cover_tips">此需填写完整的封面信息</string>
+    <string name="paper_edit_paper_cover_paper_title">题目</string>
+    <string name="paper_edit_paper_cover_paper_name">姓名</string>
+    <string name="paper_edit_paper_cover_paper_major">专业</string>
+    <string name="paper_edit_paper_cover_paper_college">学院</string>
+    <string name="paper_edit_paper_cover_paper_no">学号</string>
+    <string name="paper_edit_paper_cover_paper_teacher">指导教师</string>
+    <string name="paper_edit_paper_cover_paper_profession_qualification">职称</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_school_calendar">深大校历</string>
+
+    <style name="ToolbarSubtitleStyle">
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+    </style>
+</resources>

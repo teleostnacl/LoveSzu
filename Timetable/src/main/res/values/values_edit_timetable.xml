@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="timetable_edit_timetable_title">编辑课程表</string>
+    <string name="timetable_edit_timetable_title_new">新建课程表</string>
+    <string name="timetable_edit_timetable_basic_settings">基本设置</string>
+    <string name="timetable_edit_timetable_time_settings">一天总节数与时间设置</string>
+    <string name="timetable_edit_timetable_name_conflict">保存失败!课程表名重复,请检查!</string>
+    <string name="timetable_edit_timetable_school_days_choose_tip">请选择开学日期</string>
+    <string name="timetable_edit_timetable_current_week">@string/timetable_week_timetable_week_current</string>
+    <string name="timetable_edit_timetable_start_with_sunday">起始日为周日</string>
+    <string name="timetable_edit_timetable_start_with_monday">起始日为周一</string>
+    <string name="timetable_edit_timetable_show_weekend">显示周末课程</string>
+    <string name="timetable_edit_timetable_not_show_weekend">不显示周末课程</string>
+    <string name="timetable_edit_timetable_show_others">显示其它周课程</string>
+    <string name="timetable_edit_timetable_not_show_others">只显示指定周课程</string>
+    <string name="timetable_edit_timetable_morning_lessons">上午节数</string>
+    <string name="timetable_edit_timetable_afternoon_lessons">下午节数</string>
+    <string name="timetable_edit_timetable_evening_lessons">晚上节数</string>
+    <string name="timetable_edit_timetable_minute">分</string>
+    <string name="timetable_edit_timetable_hour">时</string>
+    <string name="timetable_edit_timetable_sum">节</string>
+    <string name="timetable_edit_timetable_lesson">第%1$d节</string>
+    <string name="timetable_edit_timetable_each_time_title">调整第%1$d节课</string>
+    <string name="timetable_edit_timetable_each_time_title_with_time">调整第%1$d节课(%2$dmin)</string>
+    <string name="timetable_edit_timetable_each_time_name">节次名称</string>
+    <string name="timetable_edit_timetable_start_time">上课时间</string>
+    <string name="timetable_edit_timetable_end_time">下课时间</string>
+    <string name="timetable_edit_timetable_title_name">课表名称</string>
+    <string name="timetable_edit_timetable_title_start_time">开学日期</string>
+    <string name="timetable_edit_timetable_title_current_week">当前周</string>
+    <string name="timetable_edit_timetable_title_weeks">学期总周数</string>
+    <string name="timetable_edit_timetable_title_show_others">是否显示非本周课程</string>
+    <string name="timetable_edit_timetable_title_is_sunday">是否周日为起始日</string>
+    <string name="timetable_edit_timetable_title_show_weekend">是否显示周末</string>
+    <string name="timetable_edit_timetable_title_show_default">是否默认显示</string>
+    <string name="timetable_edit_timetable_title_default_show">是否设为默认显示的课程表</string>
+    <string name="timetable_edit_timetable_title_sections">一天总节数</string>
+    <string name="timetable_edit_timetable_title_show_time">是否显示上下课时间</string>
+    <string name="timetable_edit_timetable_title_auto_set_time">是否自动计算上下课时间</string>
+    <string name="timetable_edit_timetable_title_period">单节课一般时长</string>
+    <string name="timetable_edit_timetable_title_rest_period">课间休息一般时长</string>
+    <string name="timetable_edit_timetable_need_name">请输入课表名称!</string>
+    <string name="timetable_edit_timetable_not_start">学期未开始!</string>
+    <string name="timetable_edit_timetable_has_end">学期已结束!</string>
+    <string name="timetable_edit_timetable_delete_timetable">删除课程表</string>
+    <string name="timetable_edit_timetable_delete_timetable_sure">确认永久删除该课程表?</string>
+
+    <color name="timetable_edit_timetable_toolbar_background">@color/white</color>
+    <color name="timetable_edit_timetable_divider_color">#FFE0E0E0</color>
+
+    <!-- 编辑课程表所使用的边距 -->
+    <dimen name="timetable_edit_timetable_margin_horizontal">24dp</dimen>
+    <dimen name="timetable_edit_timetable_margin_vertical">16dp</dimen>
+
+    <dimen name="timetable_edit_timetable_secondary_margin_horizontal">48dp</dimen>
+
+    <dimen name="timetable_edit_timetable_divider_margin_vertical">4dp</dimen>
+
+    <dimen name="timetable_edit_timetable_text_size">18sp</dimen>
+    <dimen name="timetable_edit_timetable_content_size">15sp</dimen>
+    <dimen name="timetable_edit_timetable_title_size">20sp</dimen>
+</resources>

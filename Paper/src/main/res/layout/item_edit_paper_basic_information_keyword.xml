@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 关键词使用的layout -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/item_edit_paper_basic_information_keyword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_edit_paper_basic_information_keyword_delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/item_edit_paper_basic_information_keyword_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/item_edit_paper_basic_information_keyword_delete"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_edit_paper_basic_information_keyword"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="@color/delete_color"
+            app:neumorph_shadowColorLight="@color/light_white_background" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

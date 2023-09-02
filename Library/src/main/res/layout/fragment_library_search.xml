@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="searchModel"
+            type="com.teleostnacl.szu.library.model.search.SearchModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/fragment_library_search_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/fragment_library_search_search_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layoutDirection="rtl"
+                    app:iconifiedByDefault="true"
+                    app:queryBackground="@null"
+                    app:queryHint="@string/fragment_library_main_search_tips" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/fragment_library_search_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                app:tabBackground="@color/transparent"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/szu_red"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@color/szu_red"
+                app:tabSelectedTextColor="@color/text_color_common" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/fragment_library_search_drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_white_background"
+            tools:openDrawer="start">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- 搜索方式提示语 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragment_library_search_mode_tips"
+                    style="@style/style_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_card_view"
+                        android:text="@{searchModel.searchModeModel.modeTips}" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- 搜索结果 -->
+                <com.teleostnacl.common.android.paging.PagingRecyclerView
+                    android:id="@+id/fragment_library_search_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/fragment_library_search_navigation_view"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.teleostnacl.common.android.view.loading.LoadingView
+                        android:id="@+id/fragment_library_search_navigation_view_loading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        app:text="@string/loading" />
+
+                    <!-- 大标题 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:gravity="center"
+                        android:text="@string/library_search_result_search_in_condition"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <!-- 搜索结果数 -->
+                    <TextView
+                        android:id="@+id/fragment_library_search_navigation_view_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:padding="8dp"
+                        android:text="@{searchModel.resultSum}"
+                        android:textSize="16sp" />
+
+                    <!-- 仅显示可借图书 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/navigation_view_only_show_can_lend_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/library_search_result_only_show_lend"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/navigation_view_only_show_can_lend_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="@{searchModel.onlyShownCanLend}"
+                            app:layout_constraintBottom_toBottomOf="@id/navigation_view_only_show_can_lend_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/navigation_view_only_show_can_lend_text" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 排序方式 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:padding="8dp"
+                        android:text="@string/library_search_result_sort_way"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/fragment_library_search_navigation_view_sort_way_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/fragment_library_search_navigation_view_sort_way_ob_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <ExpandableListView
+                        android:id="@+id/fragment_library_search_navigation_view_expandable_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null" />
+
+                </LinearLayout>
+
+            </com.google.android.material.navigation.NavigationView>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </LinearLayout>
+</layout>

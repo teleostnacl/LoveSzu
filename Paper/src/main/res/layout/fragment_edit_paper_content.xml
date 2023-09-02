@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fragment_edit_paper_content_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_edit_paper_content_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/padding_horizontal_paper_edit_paper"
+            app:fastScrollEnabled="true"
+            app:fastScrollHorizontalThumbDrawable="@drawable/drawable_fastscoll_thumb"
+            app:fastScrollHorizontalTrackDrawable="@color/transparent"
+            app:fastScrollVerticalThumbDrawable="@drawable/drawable_fastscoll_thumb"
+            app:fastScrollVerticalTrackDrawable="@color/transparent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/fragment_edit_paper_content_bottom_tool"
+            app:layout_constraintTop_toBottomOf="@id/fragment_edit_paper_content_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_edit_paper_content_bottom_tool"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="12dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/fragment_edit_paper_content_left_indentation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@id/fragment_edit_paper_content_right_indentation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/icon_edit_paper_content_left_indentation" />
+
+            <ImageView
+                android:id="@+id/fragment_edit_paper_content_right_indentation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@id/fragment_edit_paper_content_picture"
+                app:layout_constraintStart_toEndOf="@id/fragment_edit_paper_content_left_indentation"
+                app:srcCompat="@drawable/icon_edit_paper_content_right_indentation" />
+
+            <ImageView
+                android:id="@+id/fragment_edit_paper_content_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@id/fragment_edit_paper_content_quote"
+                app:layout_constraintStart_toEndOf="@id/fragment_edit_paper_content_right_indentation"
+                app:srcCompat="@drawable/icon_edit_paper_content_picture" />
+
+            <ImageView
+                android:id="@+id/fragment_edit_paper_content_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fragment_edit_paper_content_picture"
+                app:srcCompat="@drawable/icon_edit_paper_content_quote" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

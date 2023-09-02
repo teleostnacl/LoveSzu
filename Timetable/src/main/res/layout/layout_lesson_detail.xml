@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="lesson"
+            type="com.teleostnacl.szu.timetable.model.Lesson" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/layout_lesson_information_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/layout_lesson_information_title"
+                android:textColor="@color/text_color_common"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/layout_lesson_information_edit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:padding="2dp"
+                android:src="@drawable/ic_edit_button"
+                app:layout_constraintBottom_toBottomOf="@id/layout_lesson_information_title"
+                app:layout_constraintDimensionRatio="h, 1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layout_lesson_information_title" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 课程名 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationName}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp" />
+
+        <!-- 课程简称 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationNameAbbr}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp"
+            app:visibility_by_string="@{lesson.lessonNameAbbr}" />
+
+        <!-- 上课地点 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationLocation}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp"
+            app:visibility_by_string="@{lesson.location}" />
+
+        <!-- 上课教师 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationTeachers}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp"
+            app:visibility_by_string="@{lesson.teacher}" />
+
+        <!-- 课序号 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationNumber}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp"
+            app:visibility_by_string="@{lesson.lessonNumber}" />
+
+        <!-- 上课时间 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationTime}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp" />
+
+        <!-- 上课周 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_lesson_information_margin"
+            android:text="@{lesson.lessonInformationWeeks}"
+            android:textColor="@{lesson.textColor}"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</layout>

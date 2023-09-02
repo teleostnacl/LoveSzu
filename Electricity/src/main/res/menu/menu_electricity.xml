@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/lihu_detail"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/electricity_lihu_details"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/set_room"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/electricity_set_room"
+        app:showAsAction="ifRoom" />
+</menu>

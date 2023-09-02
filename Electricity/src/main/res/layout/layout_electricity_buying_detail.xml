@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.electricity.model.ElectricityBuyingModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.time}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.buyingPerson}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            android:visibility="@{model.buyingWayVisibility}"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.buyingWay}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.buyingSum}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.buyingMoney}" />
+
+    </LinearLayout>
+</layout>

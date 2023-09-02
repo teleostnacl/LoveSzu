@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+}
+
+apply from: "../Common/Android/common.gradle"
+
+static def getVersionNameWithDate(String version) {
+    return version + "." + new Date().format("yy.MM.dd")
+}
+
+android {
+    namespace 'com.teleostnacl.loveszu'
+
+    defaultConfig {
+        versionCode versionCodeWithDate()
+        versionName getVersionNameWithDate("0")
+
+        // 配置项目中没有的语言 可仅打包默认语言
+        resConfigs "zh"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources = true
+        }
+        debug {
+            versionNameSuffix "d"
+        }
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            def appName = ""
+            if (variant.flavorName.contains("mainApp")) {
+                appName = "爱深大"
+            }
+            def fileName = "${appName}_${android.defaultConfig.versionName}-${variant.buildType.name}.apk"
+            output.outputFileName = new File(outputFile.parent, fileName).name
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':SzuLibs')
+
+    implementation project(path: ':Login')
+    implementation project(path: ':Library')
+    implementation project(path: ':Electricity')
+    implementation project(path: ':Examination')
+    implementation project(path: ':Grade')
+    implementation project(path: ':Documentation')
+    implementation project(path: ':Timetable')
+    implementation project(path: ':Bulletin')
+    implementation project(path: ':Record')
+    implementation project(path: ':Scheme')
+    implementation project(path: ':File')
+
+    implementation project(path: ':Login')
+    implementation project(path: ':Paper')
+}

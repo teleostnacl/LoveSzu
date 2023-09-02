@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.scheme.model.SchemeDetailModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view">
+
+            <!-- 培养方案名称 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/drawable_scheme}"
+                app:text="@{model.name}" />
+
+            <!-- 年级 修读类型-->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_grade_year}"
+                app:text="@{model.year}" />
+
+            <!-- 学院 专业 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_major}"
+                app:text="@{model.collegeAndMajor}" />
+
+            <!-- 专业方向 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{model.majorFlagVisibility}"
+                app:image="@{@drawable/ic_major_flag}"
+                app:text="@{model.majorFlag}" />
+
+            <!-- 最低修读学分 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_credits}"
+                app:text="@{model.credits}" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

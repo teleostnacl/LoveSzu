@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.teleostnacl.common.android.context.ResourcesUtils" />
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.paper.model.PictureModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/vertical_margin_paper_edit_paper_item">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/layout_edit_paper_content_picture_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/drawable_edit_paper_content_picture_placeholder" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.teleostnacl.szu.paper.view.edittext.EditContentSimpleTextEditText
+            android:id="@+id/layout_edit_paper_content_picture_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/paper_edit_paper_content_choose_legend_hint"
+            android:imeOptions="actionNext"
+            android:text="@={model.pictureName}"
+            android:textSize="12sp"
+            tools:ignore="Autofill,TextFields" />
+
+    </LinearLayout>
+</layout>

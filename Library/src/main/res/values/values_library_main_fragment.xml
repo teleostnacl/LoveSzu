@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="fragment_library_main_search_tips">请输入检索关键字</string>
+
+    <string name="fragment_library_main_search_hot_keys">热门搜索关键字</string>
+    <string name="fragment_library_main_search_hot_loan">热门借阅与收藏</string>
+
+    <string name="fragment_library_main_search_hot_keys_blank">热门搜索关键字为空!</string>
+    <string name="fragment_library_main_search_hot_loan_blank">热门借阅与收藏为空!</string>
+
+    <!-- 页面的边距 -->
+    <dimen name="padding_fragment_library_main">12dp</dimen>
+
+    <!-- 热门标题所使用的padding -->
+    <dimen name="padding_horizontal_fragment_library_main_hot_title">8dp</dimen>
+    <dimen name="padding_top_fragment_library_main_hot_title">16dp</dimen>
+    <!-- 热门标题所使用的字体大小 -->
+    <dimen name="text_size_fragment_library_main_hot_title">16sp</dimen>
+
+    <!-- 展示热门卡片布局外部使用的margin值 -->
+    <dimen name="margin_fragment_library_main_card_view_outer">8dp</dimen>
+    <!-- 展示热门卡片圆角值 -->
+    <dimen name="radius_corner_fragment_library_main_card_view">12dp</dimen>
+    <!-- 展示热门的recyclerview的padding -->
+    <dimen name="padding_fragment_library_main_hot_recycler_view">8dp</dimen>
+    <!-- 展示热门借阅与收藏的项的padding值 -->
+    <dimen name="padding_horizontal_fragment_library_main_hot_loan_item">8dp</dimen>
+    <dimen name="padding_vertical_fragment_library_main_hot_loan_item">12dp</dimen>
+    <!-- 展示热门借阅与收藏的字体大小 -->
+    <dimen name="text_size_fragment_library_main_hot_loan_item">15sp</dimen>
+
+    <!-- 热门借阅与收藏 搜索 -->
+    <dimen name="padding_fragment_library_main_blank">8dp</dimen>
+    <dimen name="size_fragment_library_main_blank_image_view">80dp</dimen>
+
+</resources>

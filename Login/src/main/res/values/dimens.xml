@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 页面的总体页边距 -->
+    <dimen name="padding">36dp</dimen>
+
+    <!-- 每一项之间的margin -->
+    <dimen name="item_margin_vertical">18dp</dimen>
+    <!-- 每一项icon使用的padding-->
+    <dimen name="item_icon_padding">16dp</dimen>
+    <!-- 验证码所使用的padding -->
+    <dimen name="item_captcha_padding">8dp</dimen>
+    <!-- 每一项editText使用的padding-->
+    <dimen name="item_edit_text_padding">12dp</dimen>
+
+    <!-- 登录页面各项标题的字体大小 -->
+    <dimen name="item_title_text_size">24sp</dimen>
+
+    <!-- 忘记密码和注册新用户的字体大小 -->
+    <dimen name="login_forget_sign_text_size">18sp</dimen>
+
+</resources>

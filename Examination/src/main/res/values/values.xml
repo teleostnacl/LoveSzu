@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_examination">我的考试安排</string>
+
+    <string name="examination_loading">加载考试安排…</string>
+
+    <string name="examination_lesson_name"><![CDATA[<b><tt>课程:  </tt></b>]]></string>
+    <string name="examination_lesson_no"><![CDATA[<b><tt>课程(序)号:  </tt></b>]]></string>
+    <string name="examination_lesson_college"><![CDATA[<b><tt>开课单位:  </tt></b>]]></string>
+    <string name="examination_lesson_teacher"><![CDATA[<b><tt>主讲教师:  </tt></b>]]></string>
+    <string name="examination_lesson_time"><![CDATA[<b><tt>考试时间:  </tt></b>]]></string>
+    <string name="examination_lesson_location"><![CDATA[<b><tt>考试地点:  </tt></b>]]></string>
+    <string name="examination_lesson_status"><![CDATA[<b><tt>状态:  </tt></b>]]></string>
+
+    <string name="examination_lesson_status_finished">已完成考试</string>
+    <string name="examination_lesson_status_unfinished">未完成考试</string>
+    <string name="examination_lesson_status_unscheduled">未安排时间考试</string>
+</resources>

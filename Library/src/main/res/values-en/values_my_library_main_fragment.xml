@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_library_main_fragment_title">My Library</string>
+
+    <string name="my_library_main_fragment_tip">Long click can cancel reserve/collect!</string>
+
+    <string-array name="my_library_main_fragment_tabs">
+        <item>Personal Information</item>
+        <item>Currently Borrow</item>
+        <item>Borrow History</item>
+        <item>My Reservation</item>
+        <item>My Find Book</item>
+        <item>Collection Book</item>
+    </string-array>
+
+    <string name="my_library_user_info_basic_information">Basic Information</string>
+    <string name="my_library_user_info_name">Name:&#160;</string>
+    <string name="my_library_user_info_no">No:&#160;</string>
+    <string name="my_library_user_info_institution">Institution:&#160;</string>
+    <string name="my_library_user_info_type">Type:&#160;</string>
+
+    <string name="my_library_user_info_contact_information">Contact Information</string>
+    <string name="my_library_user_info_phone">Phone:&#160;</string>
+    <string name="my_library_user_info_mobile">Mobile:&#160;</string>
+    <string name="my_library_user_info_email">Email:&#160;</string>
+    <string name="my_library_user_info_edit_contact_information_title">Edit Contact Information</string>
+    <string name="my_library_user_info_edit_contact_information">Edit Contact Information ></string>
+    <string name="my_library_user_info_edit_contact_information_tips">
+        The librarian will contact with you by contact information as follows</string>
+    <string name="my_library_user_info_edit">Edit</string>
+
+    <string name="my_library_user_info_others">Others</string>
+    <string name="my_library_user_info_status">Current Status:&#160;</string>
+    <string name="my_library_user_info_notes">Notes:&#160;</string>
+    <string name="my_library_user_info_deposit_balance">Deposit Balance:&#160;</string>
+    <string name="my_library_user_info_points">Points:&#160;</string>
+</resources>

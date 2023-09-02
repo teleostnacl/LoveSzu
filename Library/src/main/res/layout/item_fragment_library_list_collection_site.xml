@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.library.model.list.LibraryBookListCollectionSiteModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="@dimen/library_list_fragment_corner_radius"
+        android:background="@drawable/background_library_list_fragment_collection_site"
+        android:padding="@dimen/library_list_fragment_corner_radius">
+
+        <com.teleostnacl.szu.library.view.LibraryListFragmentCheckBox
+            android:id="@+id/item_fragment_library_list_collection_site_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:checked="@={model.check}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/item_fragment_library_list_collection_site_image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_book_list_title"
+            app:layout_constraintBottom_toBottomOf="@id/item_fragment_library_list_collection_site_text_view"
+            app:layout_constraintDimensionRatio="w, 1:1"
+            app:layout_constraintStart_toEndOf="@id/item_fragment_library_list_collection_site_check_box"
+            app:layout_constraintTop_toTopOf="@id/item_fragment_library_list_collection_site_text_view" />
+
+        <TextView
+            android:id="@+id/item_fragment_library_list_collection_site_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:layout_marginStart="4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@{model.collectionSite}"
+            android:textColor="@color/text_color_common"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_fragment_library_list_collection_site_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,36 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "LoveSzu"
+include ':app'
+
+include ':Common'
+include ':Common:Android'
+include ':Common:Java'
+
+include ':Login'
+include ':SzuLibs'
+include ':Library'
+include ':Electricity'
+include ':Examination'
+include ':Grade'
+include ':Documentation'
+include ':Timetable'
+include ':Bulletin'
+include ':Scheme'
+include ':Record'
+include ':File'
+include ':Paper'

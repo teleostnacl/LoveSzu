@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.EditTimetableFragment">
+
+    <data>
+
+        <variable
+            name="timetable"
+            type="com.teleostnacl.szu.timetable.model.Timetable" />
+
+    </data>
+
+    <!-- 嵌套FrameLayout 保证CoordinatorLayout能正常运行 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_app_bar"
+                android:background="@color/timetable_edit_timetable_toolbar_background">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:collapsedTitleTextColor="@color/text_color_common"
+                    app:expandedTitleTextColor="@color/text_color_common"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/fragment_edit_timetable_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="?android:attr/homeAsUpIndicator">
+
+                        <ImageView
+                            android:id="@+id/save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="16dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:contentDescription="@null"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_save" />
+
+                    </androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- 基本设置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/timetable_edit_timetable_margin_vertical"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:text="@string/timetable_edit_timetable_basic_settings"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="@dimen/timetable_edit_timetable_title_size"
+                        android:textStyle="bold" />
+
+                    <!-- 课表名称 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setTimetableName}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_name_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_name_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_name_content"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.timetableName}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/item_edit_timetable_name_set"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_name_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_name_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_name_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 开学日期 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setStartDay}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_start_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_start_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_start_time_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_start_time_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.startDay}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_start_time_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_start_time_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_start_time_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 当前周 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setCurrentWeek}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_current_week_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_current_week"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_current_week_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_current_week_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.currentWeek}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_current_week_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_current_week_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_current_week_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 学期总周数 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/edit_timetable_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setWeeks}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_weeks_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_weeks"
+                            android:textColor="@color/black"
+
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_weeks_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_weeks_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.weeks}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_weeks_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_weeks_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_text_view_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 是否周日为起始日 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_is_sunday_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_is_sunday"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_is_sunday_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_is_sunday_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.isSunday? @string/timetable_edit_timetable_start_with_sunday :@string/timetable_edit_timetable_start_with_monday}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_is_sunday_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_is_sunday_title" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/item_edit_timetable_is_sunday_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="@={timetable.isSunday}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 是否显示周末 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_show_weekend_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_show_weekend"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_show_weekend_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_show_weekend_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.showWeekend? @string/timetable_edit_timetable_show_weekend :@string/timetable_edit_timetable_not_show_weekend}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_show_weekend_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_show_weekend_title" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/item_edit_timetable_show_weekend_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="@={timetable.showWeekend}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 是否默认显示 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_show_default_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_show_default"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/item_edit_timetable_show_default_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/timetable_edit_timetable_margin_vertical" />
+
+                    <!-- 一天总节数与时间设置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/timetable_edit_timetable_margin_vertical"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:text="@string/timetable_edit_timetable_time_settings"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="@dimen/timetable_edit_timetable_title_size"
+                        android:textStyle="bold" />
+
+                    <!-- 是否显示上下课时间 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_show_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_show_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/item_edit_timetable_show_time_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="@={timetable.showTime}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 是否自动计算上下课时间 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_auto_set_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_title_auto_set_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/item_edit_timetable_auto_set_time_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="@={timetable.autoSetTime}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 一般一节课的上下课时间 -->
+                    <LinearLayout
+                        android:id="@+id/item_edit_timetable_period_frame_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- 一般上课时长 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:onClick="@{timetable::setPeriod}"
+                            android:paddingHorizontal="@dimen/timetable_edit_timetable_secondary_margin_horizontal"
+                            android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                            <TextView
+                                android:id="@+id/item_edit_timetable_period_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/timetable_edit_timetable_title_period"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/timetable_edit_timetable_text_size"
+                                app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_period_content"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/item_edit_timetable_period_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{timetable.period}"
+                                android:textSize="@dimen/timetable_edit_timetable_content_size"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="@id/item_edit_timetable_period_title"
+                                app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_period_title" />
+
+                            <ImageView
+                                android:id="@+id/item_edit_timetable_period_set"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_timetable_edit_timetable_right"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!-- 一般下课时长 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:onClick="@{timetable::setRestPeriod}"
+                            android:paddingHorizontal="@dimen/timetable_edit_timetable_secondary_margin_horizontal"
+                            android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                            <TextView
+                                android:id="@+id/item_edit_timetable_rest_period_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/timetable_edit_timetable_title_rest_period"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/timetable_edit_timetable_text_size"
+                                app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_rest_period_content"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/item_edit_timetable_rest_period_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{timetable.restPeriod}"
+                                android:textSize="@dimen/timetable_edit_timetable_content_size"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="@id/item_edit_timetable_rest_period_title"
+                                app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_rest_period_title" />
+
+                            <ImageView
+                                android:id="@+id/item_edit_timetable_rest_period_set"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_timetable_edit_timetable_right"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/timetable_edit_timetable_margin_vertical"
+                        android:layout_marginVertical="@dimen/timetable_edit_timetable_divider_margin_vertical" />
+
+                    <!-- 上午课程 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setMorningSection}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_morning_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_morning_lessons"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_morning_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_morning_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.morningSection}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_morning_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_morning_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_morning_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_edit_timetable_morning_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adapter="@{timetable.morningAdapter}"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        android:overScrollMode="never"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/timetable_edit_timetable_margin_vertical"
+                        android:layout_marginVertical="@dimen/timetable_edit_timetable_divider_margin_vertical" />
+
+                    <!-- 下午课程 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setAfternoonSection}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_afternoon_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_afternoon_lessons"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_afternoon_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_afternoon_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.afternoonSection}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_afternoon_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_afternoon_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_afternoon_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_edit_timetable_afternoon_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adapter="@{timetable.afternoonAdapter}"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        android:overScrollMode="never"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/timetable_edit_timetable_margin_vertical"
+                        android:layout_marginVertical="@dimen/timetable_edit_timetable_divider_margin_vertical" />
+
+                    <!-- 晚上课程 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:onClick="@{timetable::setEveningSection}"
+                        android:paddingHorizontal="@dimen/timetable_edit_timetable_margin_horizontal"
+                        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_evening_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable_edit_timetable_evening_lessons"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/timetable_edit_timetable_text_size"
+                            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_evening_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/item_edit_timetable_evening_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{timetable.eveningSection}"
+                            android:textSize="@dimen/timetable_edit_timetable_content_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_evening_title"
+                            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_evening_title" />
+
+                        <ImageView
+                            android:id="@+id/item_edit_timetable_evening_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_timetable_edit_timetable_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_edit_timetable_evening_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adapter="@{timetable.eveningAdapter}"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        android:overScrollMode="never"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/timetable_edit_timetable_margin_vertical"
+                        android:layout_marginVertical="@dimen/timetable_edit_timetable_divider_margin_vertical" />
+
+                    <!-- 删除课程表 -->
+                    <soup.neumorphism.NeumorphButton
+                        android:id="@+id/edit_timetable_delete_timetable_button"
+                        style="@style/Widget.Neumorph.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:text="@string/timetable_edit_timetable_delete_timetable"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:neumorph_backgroundColor="@color/delete_color" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+</layout>

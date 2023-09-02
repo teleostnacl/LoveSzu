@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="networklibs_network_error">网络错误,请检查您的网络连接!</string>
+    <string name="networklibs_network_timeout">网络超时,请重试</string>
+    <string name="unknown_error">未知错误!</string>
+</resources>

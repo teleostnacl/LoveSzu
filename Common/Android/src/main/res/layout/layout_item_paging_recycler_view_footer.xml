@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/padding_vertical_paging_recycler_view_bottom_item">
+
+    <!-- 加载动画 -->
+    <com.teleostnacl.common.android.view.loading.LoadingView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:textSize="@dimen/text_size_paging_recycler_view_small_size_tips"
+        android:visibility="gone"
+        app:text="@string/loading" />
+
+    <!-- 获取数据失败!请重试 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/fail_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:src="@drawable/error"
+            app:layout_constraintBottom_toBottomOf="@id/fail_text"
+            app:layout_constraintDimensionRatio="w, 1:1"
+            app:layout_constraintEnd_toStartOf="@id/fail_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fail_text" />
+
+        <TextView
+            android:id="@+id/fail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:text="@string/paging_recycler_view_fail"
+            android:textSize="@dimen/text_size_paging_recycler_view_small_size_tips"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fail_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

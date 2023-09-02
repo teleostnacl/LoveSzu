@@ -1,0 +1,20 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "../Common/Android/common.gradle"
+
+android {
+    namespace 'com.teleostnacl.szu.libs'
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    api project(path: ':Common:Android')
+    api 'org.jsoup:jsoup:1.16.1'
+
+    annotationProcessor "androidx.room:room-compiler:$ROOM_VERSION"
+}

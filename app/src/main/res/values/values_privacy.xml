@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="privacy_title">隐私声明</string>
+
+    <!-- 隐私声明的内容 -->
+    <string name="privacy_content">
+        ⭐⭐ 首先, 欢迎下载使用《爱深大》App 🌹\n\n
+        ⭐ 本App为个人开发者独立完成开发, 初衷是为了将网页转化成适合手机查看的内容, 带来访问的便利\n\n
+        ⭐ 请注意: \n
+        ❗ 本应用已在Github平台开源, 仅供学习交流, 点击查看项目主页即可访问\n
+        ❗ <b><u>任何个人及组织不得用于任何商业或非法用途, 违者责任自负且将追究其法律责任</u></b>\n
+        ❗ 本应用完全免费使用, 请确保安装来源<b>安全可靠</b>, 谨防信息泄露\n
+        ❗ 此为<b>非官方</b>应用, 敬请<b>合理</b>使用; 当内部网接口发生更新时, 应用功能可能受<b>影响</b>; 当某一功能一直出现失败时, 则表示本应用已<b>不再兼容</b>新接口\n
+        ❗ 本应用仅使用<b>本科生</b>账号通过测试, <b>不能</b>保证其它类型的账号可使用所有功能\n\n
+
+        ⭐ 《爱深大》应用为提供服务, 将调用网页所使用的接口, 并会对您的<b>校园数据</b>进行访问并<b>部分存储在本地</b>中, <b><u>本应用不会对您的任何数据及信息进行收集, 转存或传输</u></b>\n\n
+        ✨ 本应用核心功能为访问学校网页并获取数据, 需要使用到<b>cookies</b>, 应用将会<b>加密</b>cookies信息并<b>储存</b>进<b>本地数据库</b>中, 以便使用各个功能; 同时, 所有储存在<b>本地</b>中的数据都将经过<b>加密</b>处理\n\n
+
+        *** <big><b><u>同意并开始使用即表示您将授予应用使用这些数据, 由此产生的后果本应用及开发者将不承担任何责任</u></b></big>  ***\n\n
+
+        ❤❤❤ 最后, 愿此App将能给您带来一些帮助与便利
+    </string>
+
+    <integer name="privacy_version">3</integer>
+
+    <string name="privacy_home">主看项目主页</string>
+    <string name="privacy_agree_time">同意(%ds)</string>
+    <string name="privacy_agree">同意</string>
+    <string name="privacy_disagree">不同意, 退出程序</string>
+    <string name="privacy_undo">撤销同意, 并清除应用数据</string>
+</resources>

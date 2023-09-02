@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 图书详细页图书简介使用的View -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.teleostnacl.szu.library.model.detail.BookModel" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="@dimen/padding_card_view"
+            android:text="@{book.information}"
+            android:textColor="@color/text_color_common"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region 排序方式 -->
+    <string name="M_TITLE">题名</string>
+    <string name="M_PUBLISHER">出版社</string>
+    <string name="M_PUB_YEAR">出版年</string>
+    <string name="M_AUTHOR">著者</string>
+    <string name="M_SUBJECT">主题词</string>
+    <string name="M_CLC">分类号</string>
+    <string name="M_CATALOGDATE">进馆日期</string>
+    <string name="search_result_DESC">降序排列</string>
+    <string name="search_result_ASC">升序排列</string>
+    <!-- endregion -->
+
+    <!-- region 检索方式 -->
+    <string name="ANYWORDS">任意字段关键词</string>
+    <string name="TITLEFORWARD">题名前方一致</string>
+    <string name="TITLEANY">题名内关键词</string>
+    <string name="AUTHORFORWARD">著者前方一致</string>
+    <string name="AUTHORANY">著者内关键词</string>
+    <string name="KEYWORDFORWARD">内容主题词</string>
+    <string name="PUBLISHERFORWARD">出版者名称</string>
+    <string name="CLCFORWARD">中图法分类号</string>
+    <string name="ISBNFORWARD">ISBN</string>
+    <string name="ISSNFORWARD">ISSN</string>
+    <string name="CALLNOFORWARD">索取号</string>
+
+    <string name="ANYWORDS_tip">任意字段关键词是指：检索书目记录中所有字段的任意内容。如：内容提要里的语词、题名里的语词等。如：自然科学。</string>
+    <string name="TITLEFORWARD_tip">题名包括：图书名、期刊名、丛书名等出版物名称。请输入完整题名或题名起始部分。</string>
+    <string name="TITLEANY_tip">题名包括：图书名、期刊名、丛书名等出版物名称。可检索题名任意部分。</string>
+    <string name="AUTHORFORWARD_tip">著者即作者。作者检索范围为个人作者，团体作者和会议名称等。请输入完整著者名或著者名起始部分。</string>
+    <string name="AUTHORANY_tip">著者即作者。作者检索范围为个人作者，团体作者和会议名称等。可检索著者名任意部分</string>
+    <string name="KEYWORDFORWARD_tip">检索范围为主题词字段。主题词是用来揭示资料内容特征的词或词组。请输入完整主题词或主题词起始部分。如：程序设计</string>
+    <string name="PUBLISHERFORWARD_tip">出版者即出版社。请输入完整出版社名或出版社名的起始部分。如：电子工业出版社</string>
+    <string name="CLCFORWARD_tip">请输入完整分类号或分类号的起始部分。如：TP311</string>
+    <string name="ISBNFORWARD_tip">ISBN为国际标准书号。请输入完整ISBN或ISBN的起始部分。如：7–121–03217–1</string>
+    <string name="ISSNFORWARD_tip">ISSN为国际连续出版物号。请输入完整ISSN或ISSN的起始部分。如：0253–4177</string>
+    <string name="CALLNOFORWARD_tip">索取号由分类号和书次号构成，分类号与书次号用 / 隔开。请输入完整索取号或索取号的起始部分。如：TB9–43/M12</string>
+    <!-- endregion -->
+
+    <!-- region 限制搜索范围 -->
+    <string name="library_search_result_search_in_condition">限制搜索范围</string>
+    <string name="library_search_result_sum">结果数: %s</string>
+    <string name="library_search_result_only_show_lend">仅显示可借图书</string>
+    <string name="library_search_result_sort_way">排序方式</string>
+    <string name="library_search_result_category">分类</string>
+    <string name="library_search_result_document_type">文献类型</string>
+    <string name="library_search_result_collection_site">典藏地点</string>
+    <string name="library_search_result_publication_date">出版日期</string>
+    <!-- endregion -->
+
+</resources>

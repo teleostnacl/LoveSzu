@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="paper_edit_paper_title">编辑论文 - %s</string>
+
+    <string name="paper_edit_paper_title_undefined">未命名的论文</string>
+    <string name="paper_edit_paper_save">保存修改</string>
+
+    <string name="paper_edit_paper_discard">是否丢弃修改?</string>
+    <string name="paper_edit_paper_discard_yes">丢弃修改</string>
+    <string name="paper_edit_paper_discard_no">继续编辑</string>
+
+    <string name="paper_edit_paper_auto_generate_picture_no_true">自动生成图例的编号 开</string>
+    <string name="paper_edit_paper_auto_generate_picture_no_false">自动生成图例的编号 关</string>
+
+    <string name="paper_edit_paper_export">生成论文</string>
+
+    <string name="paper_edit_paper_export_path">导出论文的路径: %s</string>
+    <string name="paper_edit_paper_export_success">导出论文成功</string>
+    <string name="paper_edit_paper_export_failed">导出论文失败</string>
+
+    <string name="paper_edit_paper_share">分享论文</string>
+    <string name="paper_edit_paper_share_title">分享论文: %s.docx</string>
+</resources>

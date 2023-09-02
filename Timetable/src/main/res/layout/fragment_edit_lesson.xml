@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.EditLessonFragment"
+    tools:ignore="Autofill, TextFields">
+
+    <data>
+
+        <variable
+            name="lesson"
+            type="com.teleostnacl.szu.timetable.model.Lesson" />
+    </data>
+
+    <!-- 嵌套FrameLayout 保证CoordinatorLayout能正常运行 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_app_bar"
+                android:background="@color/white">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:collapsedTitleGravity="center"
+                    app:collapsedTitleTextColor="@color/text_color_common"
+                    app:expandedTitleTextColor="@color/text_color_common"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <TextView
+                        android:id="@+id/fragment_edit_lesson_toolbar_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginHorizontal="32dp"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_collapseMode="parallax" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/fragment_edit_lesson_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="?android:attr/homeAsUpIndicator">
+
+                        <ImageView
+                            android:id="@+id/save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="16dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:contentDescription="@null"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_save" />
+
+                    </androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- 课程名称 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:background="@drawable/background_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:text="@string/edit_lesson_fragment_lesson_name"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edit_lesson_name_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:background="@null"
+                            android:gravity="end|center_horizontal"
+                            android:hint="@string/hint_timetable_edit_text_must"
+                            android:text="@={lesson.lessonName}"
+                            android:textColorHint="@android:color/holo_red_light"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@id/edit_lesson_name"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!--                &lt;!&ndash; 课程简称 &ndash;&gt;-->
+                    <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"-->
+                    <!--                    android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"-->
+                    <!--                    android:background="@drawable/background_timetable_edit_text">-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/edit_lesson_name_abbr"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="@dimen/margin_text_timetable_edit_text"-->
+                    <!--                        android:text="@string/edit_lesson_fragment_name_abbr"-->
+                    <!--                        android:textColor="@color/text_color_common"-->
+                    <!--                        android:textSize="@dimen/text_size_timetable_edit_text"-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                    <EditText-->
+                    <!--                        android:id="@+id/edit_lesson_name_abbr_edit_text"-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_margin="@dimen/margin_text_timetable_edit_text"-->
+                    <!--                        android:background="@null"-->
+                    <!--                        android:gravity="end|center_horizontal"-->
+                    <!--                        android:hint="@string/hint_timetable_edit_text_not_must"-->
+                    <!--                        android:text="@={lesson.lessonNameAbbr}"-->
+                    <!--                        android:textSize="@dimen/text_size_timetable_edit_text"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                        app:layout_constraintHorizontal_bias="1.0"-->
+                    <!--                        app:layout_constraintStart_toEndOf="@id/edit_lesson_name_abbr"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!-- 上课地点 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:background="@drawable/background_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_classroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:text="@string/edit_lesson_fragment_classroom"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edit_lesson_classroom_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:background="@null"
+                            android:gravity="end|center_horizontal"
+                            android:hint="@string/hint_timetable_edit_text_not_must"
+                            android:text="@={lesson.location}"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@id/edit_lesson_classroom"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 授课教师 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:background="@drawable/background_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_teacher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:text="@string/edit_lesson_fragment_teacher"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edit_lesson_teacher_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:background="@null"
+                            android:gravity="end|center_horizontal"
+                            android:hint="@string/hint_timetable_edit_text_not_must"
+                            android:text="@={lesson.teacher}"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@id/edit_lesson_teacher"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 课程号 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:background="@drawable/background_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:text="@string/edit_lesson_fragment_id"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edit_lesson_id_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:background="@null"
+                            android:gravity="end|center_horizontal"
+                            android:hint="@string/hint_timetable_edit_text_not_must"
+                            android:text="@{lesson.lessonNumber}"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@id/edit_lesson_id"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 课序号 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:background="@drawable/background_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_serial_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:text="@string/edit_lesson_fragment_serial_id"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edit_lesson_serial_id_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_text_timetable_edit_text"
+                            android:background="@null"
+                            android:gravity="end|center_horizontal"
+                            android:hint="@string/hint_timetable_edit_text_not_must"
+                            android:text="@={lesson.lessonSerialNumber}"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@id/edit_lesson_serial_id"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 上课时间 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:paddingHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:paddingVertical="@dimen/margin_vertical_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit_lesson_fragment_time"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/edit_lesson_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:paddingHorizontal="4dp"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- 上课周数 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:paddingVertical="@dimen/margin_vertical_timetable_edit_text">
+
+                        <TextView
+                            android:id="@+id/edit_lesson_fragment_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                            android:layout_marginEnd="@dimen/margin_horizontal_timetable_edit_text"
+                            android:text="@string/edit_lesson_fragment_weeks"
+                            android:textColor="@color/text_color_common"
+                            android:textSize="@dimen/text_size_timetable_edit_text"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/edit_lesson_week_switcher_radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                            android:orientation="horizontal" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/edit_lesson_week_picker_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <!-- 颜色 -->
+                    <TextView
+                        android:id="@+id/edit_lesson_color_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:layout_marginVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:paddingHorizontal="@dimen/margin_horizontal_timetable_edit_text"
+                        android:paddingVertical="@dimen/margin_vertical_timetable_edit_text"
+                        android:text="@string/edit_lesson_fragment_color"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="@dimen/text_size_timetable_edit_text"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/edit_lesson_color_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_horizontal_timetable_edit_text" />
+
+                    <!-- 删除课程 -->
+                    <soup.neumorphism.NeumorphButton
+                        android:id="@+id/edit_lesson_delete_lesson_button"
+                        style="@style/Widget.Neumorph.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:text="@string/edit_lesson_fragment_delete_lesson"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:neumorph_backgroundColor="@color/delete_color" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+</layout>

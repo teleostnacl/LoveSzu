@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_growth_record">成长记录</string>
+
+    <string name="growth_record_loading">加载成长记录中…</string>
+
+    <string name="growth_record_gpa_and_pm"><![CDATA[全部成绩GPA: <font color="#60be29">%1$s</font> 全部成绩专业排名: <font color="#60be29">%2$s</font>]]></string>
+
+    <string name="growth_record_semester_name"><![CDATA[<big><b><tt>%s成绩</tt></b></big>]]></string>
+    <string name="growth_record_semester_gpa"><![CDATA[<b><tt>学期GPA: </tt></b>%s]]></string>
+    <string name="growth_record_semester_ranking"><![CDATA[<b><tt>排名: </tt></b>%1$s / %2$s]]></string>
+    <string name="growth_record_semester_ranking_percent"><![CDATA[<b><tt>相对排名: </tt></b>%s%%]]></string>
+    <string name="growth_record_semester_grade"><![CDATA[<big><b><tt>截止到该学期的该学年成绩</tt></b></big>]]></string>
+    <string name="growth_record_semester_grade_gpa"><![CDATA[<b><tt>学年GPA: </tt></b>%s]]></string>
+    <string name="growth_record_semester_grade_all"><![CDATA[<big><b><tt>截止到该学期的全部成绩</tt></b></big>]]></string>
+    <string name="growth_record_semester_all_gpa"><![CDATA[<b><tt>全部GPA: </tt></b>%s]]></string>
+
+
+    <string name="growth_record_semester_in_school_status"><![CDATA[<b><tt>在校状态: </tt></b><font color="#60be29">在校</font>]]></string>
+    <string name="growth_record_semester_in_school_status_no"><![CDATA[<b><tt>在校状态: </tt></b><font color="#E6564A">不在校</font>]]></string>
+    <string name="growth_record_semester_report_status"><![CDATA[<b><tt>报到状态: </tt></b><font color="#60be29">已报到</font>]]></string>
+    <string name="growth_record_semester_report_status_no"><![CDATA[<b><tt>报到状态: </tt></b><font color="#E6564A">未报到</font>]]></string>
+    <string name="growth_record_semester_register_status"><![CDATA[<b><tt>注册状态: </tt></b><font color="#60be29">已注册</font>]]></string>
+    <string name="growth_record_semester_register_status_no"><![CDATA[<b><tt>注册状态: </tt></b><font color="#E6564A">未注册</font>]]></string>
+    <string name="growth_record_semester_pay_status"><![CDATA[<b><tt>缴费状态: </tt></b><font color="#60be29">已缴费</font>]]></string>
+    <string name="growth_record_semester_pay_status_no"><![CDATA[<b><tt>缴费状态: </tt></b><font color="#E6564A">未缴费</font>]]></string>
+
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_paper">本科论文工具</string>
+
+    <!-- 编辑论文的水平间距 -->
+    <dimen name="padding_horizontal_paper_edit_paper">16dp</dimen>
+    <!-- 编辑论文各项间的垂直距离 -->
+    <dimen name="vertical_margin_paper_edit_paper_item">4dp</dimen>
+
+    <!-- 完成button用的背景色 -->
+    <style name="paper_neumorph_button" parent="Widget.Neumorph.Button">
+        <item name="neumorph_backgroundColor">#c4e7ff</item>
+        <item name="neumorph_shadowColorLight">@color/light_white_background</item>
+        <item name="android:textColor">?android:attr/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Theme.Paper" parent="Theme.Szu">
+        <item name="colorPrimary">#001e2e</item>
+    </style>
+</resources>

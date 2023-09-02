@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.examination.model.ExaminationDataModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_examination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view">
+
+            <!-- 课程名 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/icon_examination_lesson_name}"
+                app:text="@{model.lessonName}" />
+
+            <!-- 课程(序)号 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/icon_examination_lesson_no}"
+                app:text="@{model.lessonNo}" />
+
+            <!-- 开课单位 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/icon_examination_lesson_college}"
+                app:text="@{model.lessonCollege}" />
+
+            <!-- 主讲教师 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/icon_examination_lesson_teacher}"
+                app:text="@{model.lessonTeacher}" />
+
+            <!-- 考试时间 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{model.timeAndLocationVisibility}"
+                app:image="@{@drawable/icon_examination_lesson_time}"
+                app:text="@{model.lessonTime}" />
+
+            <!-- 考试地点 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{model.timeAndLocationVisibility}"
+                app:image="@{@drawable/icon_examination_lesson_location}"
+                app:text="@{model.lessonLocation}" />
+
+            <!-- 状态 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/icon_examination_lesson_status}"
+                app:text="@{model.status}" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

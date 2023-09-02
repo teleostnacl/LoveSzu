@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 修改联系方式的layout -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Autofill,LabelFor,TextFields">
+
+    <data>
+        <variable
+            name="userInfo"
+            type="com.teleostnacl.szu.library.model.user.MyLibraryUserInfoModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp">
+
+        <!-- 电话 -->
+        <ImageView
+            android:id="@+id/user_info_phone_image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:src="@drawable/phone"
+            app:layout_constraintBottom_toBottomOf="@id/user_info_phone"
+            app:layout_constraintDimensionRatio="w, 1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/user_info_phone" />
+
+        <TextView
+            android:id="@+id/user_info_phone"
+            style="@style/style_modify_user_info_text_view"
+            android:text="@string/my_library_user_info_phone"
+            app:layout_constraintStart_toEndOf="@id/user_info_phone_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:text="@={userInfo.editPhone}"
+            app:layout_constraintBottom_toBottomOf="@id/user_info_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/user_info_phone"
+            app:layout_constraintTop_toTopOf="@id/user_info_phone" />
+
+        <!-- 手机 -->
+        <ImageView
+            android:id="@+id/user_info_mobile_image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:src="@drawable/mobile"
+            app:layout_constraintBottom_toBottomOf="@id/user_info_mobile"
+            app:layout_constraintDimensionRatio="w, 1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/user_info_mobile" />
+
+        <TextView
+            android:id="@+id/user_info_mobile"
+            style="@style/style_modify_user_info_text_view"
+            android:text="@string/my_library_user_info_mobile"
+            app:layout_constraintStart_toEndOf="@id/user_info_mobile_image_view"
+            app:layout_constraintTop_toBottomOf="@id/user_info_phone" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:text="@={userInfo.editMobile}"
+            app:layout_constraintBottom_toBottomOf="@id/user_info_mobile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/user_info_mobile"
+            app:layout_constraintTop_toTopOf="@id/user_info_mobile" />
+
+        <!-- 电子邮件 -->
+        <ImageView
+            android:id="@+id/user_info_email_image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:src="@drawable/mail"
+            app:layout_constraintBottom_toBottomOf="@id/user_info_email"
+            app:layout_constraintDimensionRatio="w, 1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/user_info_email" />
+
+        <TextView
+            android:id="@+id/user_info_email"
+            style="@style/style_modify_user_info_text_view"
+            android:text="@string/my_library_user_info_email"
+            app:layout_constraintStart_toEndOf="@id/user_info_email_image_view"
+            app:layout_constraintTop_toBottomOf="@id/user_info_mobile" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textEmailAddress"
+            android:text="@={userInfo.editMail}"
+            app:layout_constraintBottom_toBottomOf="@id/user_info_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/user_info_email"
+            app:layout_constraintTop_toTopOf="@id/user_info_email" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/my_library_user_info_edit_contact_information_tips"
+            app:layout_constraintTop_toBottomOf="@id/user_info_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="@dimen/library_list_fragment_check_box_size"
+    android:height="@dimen/library_list_fragment_check_box_size"
+    android:viewportWidth="1536"
+    android:viewportHeight="1536">
+
+    <path
+        android:name="check_box_background_checked"
+        android:pathData="M0,768 A768, 768, 0, 1, 0, 0, 767">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="@color/library_list_fragment_check_box_main_color"
+                android:endX="1536"
+                android:endY="0"
+                android:startColor="@color/library_list_fragment_check_box_second_color"
+                android:startX="0"
+                android:startY="0"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <path
+        android:name="check_box_background_unchecked"
+        android:pathData="M96,768 A672, 672, 0, 1, 0, 96, 767"
+        android:strokeWidth="96"
+        android:strokeColor="#FFDDDDDD" />
+
+    <path
+        android:name="check_box_ok"
+        android:fillColor="@color/white"
+        android:pathData="m735.468,1016.93399c-28.762,28.039 -75.489,28.039 -104.251,0
+            l-234.739,-229.703c-28.762,-28.039 -28.762,-74.052 0,-102.087
+            s75.489,-28.039 104.251,0l182.615,178.658l351.927,-344.736
+            c28.762,-28.039 75.489,-28.039 104.251,0
+            s28.762,74.052 0,102.087l-404.048,395.781l-0.006,0z" />
+</vector>

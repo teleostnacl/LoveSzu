@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="need_login">当前网络环境使用该功能需要登录!</string>
+</resources>

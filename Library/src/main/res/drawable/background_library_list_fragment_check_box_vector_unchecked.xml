@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/library_list_fragment_check_box_size"
+    android:height="@dimen/library_list_fragment_check_box_size"
+    android:viewportHeight="1536"
+    android:viewportWidth="1536">
+
+        <path
+            android:pathData="M96,768 A672, 672, 0, 1, 0, 96, 767"
+            android:strokeColor="#FFDDDDDD"
+            android:strokeWidth="96" />
+</vector>

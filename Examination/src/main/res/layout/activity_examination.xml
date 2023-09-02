@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/activity_examination_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:fitsSystemWindows="true" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/activity_examination_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                app:tabBackground="@color/transparent"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/szu_red"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@color/szu_red"
+                app:tabSelectedTextColor="@color/text_color_common" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/activity_examination_view_page2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_white_background" />
+
+    </LinearLayout>
+</layout>

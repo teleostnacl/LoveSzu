@@ -8,24 +8,7 @@
 > 2. 蓝奏云: <u> https://wwto.lanzouy.com/b041k0nod </u> 密码:8eop
 > 3. 百度网盘: <u> https://pan.baidu.com/s/11Q4AsIDe780RgeFL-hmpUw?pwd=pwt6 </u> 提取码: pwt6
 
-# 20221230更新
-本次更新新增课程表功能
-![课程表](Screenshots/14_timetable_xmind.png)
-1. 课程表将提供展示按照课程上课时间进行展示课程信息, 包括, 课程名, 课程地点, 授课教师, 上课开始时间及结束时间, 另外也会显示当前周数与日期, 方便快速查看课程信息
-![课程表主页](Screenshots/15_timetable_main.jpg)
-2. 单击课程可查看课程详细信息
-![课程详细信息](Screenshots/16_timetable_lesson_detail.jpg)
-3. 点击课程详细信息弹窗的编辑按钮, 或者双击空白课程, 可跳转到编辑/新建课程页面, 可编辑课程信息
-![编辑课程](Screenshots/17_timetable_edit_lesson.jpg)
-4. 在菜单中可进行新建课程表, 编辑课程表, 从办事大厅导入课程表, 切换课程表
-![课程表菜单](Screenshots/18_timetable_menu.png)
-5. 点击菜单的新建/编辑课程表, 进入到新建/编辑课程表页面
-![编辑课程表](Screenshots/19_edit_timetable.jpg)
-6. 点击菜单的从办事大厅导入将弹出提示框提示是否导入当前的账号(若已登录. 若未登录则直接跳转登录界面). 将访问内部网我的课表页面, 获取当前所有的课表信息, 并提示选择需要导入的课表. 
-![导入](Screenshots/20_timetable_import.png)
-![选择导入的课程表](Screenshots/20_timetable_import_select.jpg)
-
----
+# **本应用在Github平台开源, 仅供学习交流, 任何个人及组织不得用于任何商业或非法用途, 违者责任自负且将追究其法律责任**
 
 # 20221217 第一版
 
@@ -194,3 +177,22 @@
 ---
 # (玖)
 >❤❤❤ 最后, 愿此App将能给您带来一些帮助与便利
+
+---
+
+# 20221230更新
+本次更新新增课程表功能
+![课程表](Screenshots/14_timetable_xmind.png)
+1. 课程表将提供展示按照课程上课时间进行展示课程信息, 包括, 课程名, 课程地点, 授课教师, 上课开始时间及结束时间, 另外也会显示当前周数与日期, 方便快速查看课程信息
+   ![课程表主页](Screenshots/15_timetable_main.jpg)
+2. 单击课程可查看课程详细信息
+   ![课程详细信息](Screenshots/16_timetable_lesson_detail.jpg)
+3. 点击课程详细信息弹窗的编辑按钮, 或者双击空白课程, 可跳转到编辑/新建课程页面, 可编辑课程信息
+   ![编辑课程](Screenshots/17_timetable_edit_lesson.jpg)
+4. 在菜单中可进行新建课程表, 编辑课程表, 从办事大厅导入课程表, 切换课程表
+   ![课程表菜单](Screenshots/18_timetable_menu.png)
+5. 点击菜单的新建/编辑课程表, 进入到新建/编辑课程表页面
+   ![编辑课程表](Screenshots/19_edit_timetable.jpg)
+6. 点击菜单的从办事大厅导入将弹出提示框提示是否导入当前的账号(若已登录. 若未登录则直接跳转登录界面). 将访问内部网我的课表页面, 获取当前所有的课表信息, 并提示选择需要导入的课表.
+   ![导入](Screenshots/20_timetable_import.png)
+   ![选择导入的课程表](Screenshots/20_timetable_import_select.jpg)

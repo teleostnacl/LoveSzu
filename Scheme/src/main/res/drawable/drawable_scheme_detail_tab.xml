@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:width="@dimen/dimen_width_scheme_detail_tab">
+        <shape>
+            <solid android:color="@color/color_scheme_detail_tab" />
+        </shape>
+    </item>
+
+    <item
+        android:width="@dimen/dimen_width_scheme_detail_tab_view"
+        android:height="@dimen/dimen_width_scheme_detail_tab"
+        android:gravity="center">
+        <shape>
+            <solid android:color="@color/color_scheme_detail_tab" />
+
+            <corners
+                android:bottomRightRadius="8dp"
+                android:topRightRadius="8dp" />
+        </shape>
+    </item>
+
+</layer-list>

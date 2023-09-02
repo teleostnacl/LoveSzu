@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.library.model.list.LibraryBookListModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.teleostnacl.szu.library.view.RadiusFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingHorizontal="@dimen/library_list_fragment_corner_radius"
+        android:paddingTop="@dimen/library_list_fragment_corner_radius"
+        app:backgroundColor="@color/white"
+        app:bottomRadius="@{model.last?@dimen/library_list_fragment_corner_radius:0}"
+        app:topRadius="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.teleostnacl.szu.library.view.LibraryListFragmentCheckBox
+                android:id="@+id/item_fragment_library_list_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:checked="@={model.check}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 排/架参考 -->
+            <include
+                android:id="@+id/item_book_collection_list_shelf_reference"
+                layout="@layout/layout_item_text_with_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="@{model.shelfReferenceVisibility}"
+                app:image="@{@drawable/ic_library_book_shelve_reference}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/item_fragment_library_list_check_box"
+                app:layout_constraintTop_toTopOf="parent"
+                app:text="@{model.shelfReference}" />
+
+            <ImageView
+                android:id="@+id/item_book_collection_list_cover"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@null"
+                android:paddingVertical="@dimen/book_detail_cover_vertical_padding"
+                android:scaleType="fitStart"
+                android:src="@{model.cover}"
+                app:layout_constraintBottom_toBottomOf="@id/item_fragment_library_list_content"
+                app:layout_constraintDimensionRatio="@string/book_detail_cover_constraint_dimension_ratio"
+                app:layout_constraintStart_toEndOf="@id/item_fragment_library_list_check_box"
+                app:layout_constraintTop_toTopOf="@id/item_fragment_library_list_content" />
+
+            <LinearLayout
+                android:id="@+id/item_fragment_library_list_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="@dimen/library_list_fragment_corner_radius"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/item_book_collection_list_cover"
+                app:layout_constraintTop_toBottomOf="@id/item_book_collection_list_shelf_reference">
+
+                <!-- 书名 -->
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_title}"
+                    app:text="@{model.title}" />
+
+                <!-- 卷期 -->
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_volume}"
+                    app:text="@{model.volume}" />
+
+                <!-- 索取号 -->
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_call_number}"
+                    app:text="@{model.callNumber}" />
+
+                <!-- 登录号 -->
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_accession_number}"
+                    app:text="@{model.accessionNumber}" />
+
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="@{model.last?View.GONE:View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.teleostnacl.szu.library.view.RadiusFrameLayout>
+</layout>

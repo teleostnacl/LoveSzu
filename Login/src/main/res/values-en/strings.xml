@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_login">Login</string>
+    <string name="item_switch_account">Switch Account</string>
+
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_captcha">Captcha</string>
+    <string name="login_username_tip">Please input username</string>
+    <string name="login_password_tip">Please input password</string>
+    <string name="login_submit">Login</string>
+    <string name="login_remember">Remember Me</string>
+    <string name="login_auto_login">Auto Login</string>
+
+    <string name="logging">Logging…</string>
+    <string name="login_captcha_fail">Get captcha failed! Please click captcha to retry!</string>
+
+    <string name="login_password_error">Username or password you input would be wrong!</string>
+    <string name="login_captcha_error">Invalid captcha, please reinput captcha</string>
+    <string name="login_need_username">Please input username!</string>
+    <string name="login_need_password">Please input password!</string>
+    <string name="login_success">Login success!</string>
+
+    <string name="login_new">New User</string>
+    <string name="login_delete">Are you sure delete the user: %s?</string>
+
+    <string name="login_help"><u>《User Guide》</u></string>
+    <string name="login_forget_password"><u>Forget Password?</u></string>
+</resources>

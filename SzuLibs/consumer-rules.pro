@@ -1,0 +1,1 @@
+-keep interface * extends com.teleostnacl.szu.libs.ehall.retrofit.EHallApi

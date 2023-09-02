@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_horizontal_item_neumorph_card_view_text_with_icon">8dp</dimen>
+    <dimen name="margin_vertical_item_neumorph_card_view_text_with_icon">2dp</dimen>
+
+    <dimen name="padding_horizontal_item_neumorph_card_view_text_with_icon">12dp</dimen>
+    <dimen name="padding_vertical_item_neumorph_card_view_text_with_icon">18dp</dimen>
+    <dimen name="text_size_item_neumorph_card_view_text_with_icon">20sp</dimen>
+</resources>

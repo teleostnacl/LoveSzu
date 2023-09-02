@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 错误 无数据时的提示语的字体大小 -->
+    <dimen name="text_size_paging_recycler_view_big_size_tips">20sp</dimen>
+    <dimen name="text_size_paging_recycler_view_small_size_tips">18sp</dimen>
+
+    <dimen name="padding_vertical_paging_recycler_view_bottom_item">16dp</dimen>
+
+    <string name="paging_recycler_view_fail">加载失败!单击重试</string>
+    <string name="paging_recycler_view_none">暂无数据!</string>
+
+</resources>

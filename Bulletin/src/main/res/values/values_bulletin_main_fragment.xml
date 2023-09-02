@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="bulletin_main_fragment_title">公文通</string>
+    <string name="bulletin_main_fragment_info_type_all">最新发布</string>
+    <string name="bulletin_main_fragment_info_type_lecture">学术讲座</string>
+    <string name="bulletin_main_fragment_info_type_teaching">教务教学</string>
+    <string name="bulletin_main_fragment_info_type_scientific">科研动态</string>
+    <string name="bulletin_main_fragment_info_type_administration">党务行政</string>
+    <string name="bulletin_main_fragment_info_type_student">学生工作</string>
+    <string name="bulletin_main_fragment_info_type_living">校园生活</string>
+
+    <string name="bulletin_main_fragment_menu_search">搜索公文通</string>
+
+    <string name="bulletin_main_fragment_info_type_item_time">
+        <![CDATA[<font color="#00269a">%1$s </font> %2$s]]></string>
+
+</resources>

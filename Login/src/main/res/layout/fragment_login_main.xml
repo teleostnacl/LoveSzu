@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Autofill,TextFields">
+
+    <data>
+
+        <variable
+            name="loginModel"
+            type="com.teleostnacl.szu.login.model.LoginModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/login_username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_vertical"
+            android:text="@string/login_username"
+            android:textColor="@color/text_color_common"
+            android:textSize="@dimen/item_title_text_size"
+            android:textStyle="bold" />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/login_username_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/item_icon_padding"
+                    android:src="@drawable/ic_login_username"
+                    app:layout_constraintBottom_toBottomOf="@id/login_username"
+                    app:layout_constraintDimensionRatio="w, 1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/login_username" />
+
+                <com.teleostnacl.common.android.view.edittext.RelationViewEditText
+                    android:id="@+id/login_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/login_username_tip"
+                    android:paddingVertical="@dimen/item_edit_text_padding"
+                    android:singleLine="true"
+                    android:text="@={loginModel.username}"
+                    app:layout_constraintEnd_toStartOf="@id/login_username_spinner"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/login_username_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.teleostnacl.common.android.view.spinner.RefreshSpinner
+                    android:id="@+id/login_username_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:dropDownHorizontalOffset="-50dp"
+                    android:dropDownVerticalOffset="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <!-- 密码 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_vertical"
+            android:text="@string/login_password"
+            android:textColor="@color/text_color_common"
+            android:textSize="@dimen/item_title_text_size"
+            android:textStyle="bold" />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/login_password_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/item_icon_padding"
+                    android:src="@drawable/ic_login_password"
+                    app:layout_constraintBottom_toBottomOf="@id/login_password"
+                    app:layout_constraintDimensionRatio="w, 1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/login_password" />
+
+                <com.teleostnacl.common.android.view.edittext.RelationViewEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/login_password_tip"
+                    android:inputType="textPassword"
+                    android:paddingVertical="@dimen/item_edit_text_padding"
+                    android:singleLine="true"
+                    android:text="@={loginModel.passwordInput}"
+                    app:layout_constraintEnd_toStartOf="@id/login_show_password_icon"
+                    app:layout_constraintStart_toEndOf="@id/login_password_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/login_show_password_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/item_icon_padding"
+                    android:src="@drawable/ic_login_password_not_show"
+                    app:layout_constraintDimensionRatio="w, 1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/login_password" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <!-- 验证码 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/captcha_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_vertical"
+            android:visibility="@{loginModel.needCaptcha ? View.VISIBLE : View.GONE}"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/login_captcha_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_captcha"
+                android:textColor="@color/text_color_common"
+                android:textSize="@dimen/item_title_text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/login_captcha_view"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/login_captcha_img_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login_captcha_text"
+                app:neumorph_shapeType="pressed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/captcha_edit_text_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:contentDescription="@null"
+                        android:padding="@dimen/item_icon_padding"
+                        android:src="@drawable/ic_login_captcha"
+                        app:layout_constraintBottom_toBottomOf="@id/captcha_edit_text"
+                        app:layout_constraintDimensionRatio="w, 1:1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/captcha_edit_text" />
+
+                    <com.teleostnacl.common.android.view.edittext.RelationViewEditText
+                        android:id="@+id/captcha_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/login_captcha"
+                        android:paddingVertical="@dimen/item_edit_text_padding"
+                        android:singleLine="true"
+                        android:text="@={loginModel.captcha}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/captcha_edit_text_icon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/login_captcha_img_view"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/login_captcha_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/login_captcha_view"
+                app:layout_constraintTop_toTopOf="@id/login_captcha_view"
+                app:neumorph_shapeType="flat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/captcha_img"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"
+                        android:padding="@dimen/item_captcha_padding"
+                        android:scaleType="fitCenter"
+                        android:src="@{loginModel.captchaBitmap}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="w, 92:34"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/item_captcha_padding"
+                        android:visibility="@{loginModel.captchaBitmap == null ? View.VISIBLE : View.GONE}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </soup.neumorphism.NeumorphCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 自动登录 与 记住密码 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/item_margin_vertical">
+
+            <CheckBox
+                android:id="@+id/remember_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/item_margin_vertical"
+                android:layout_weight="1"
+                android:checked="@={loginModel.remember}"
+                android:text="@string/login_remember"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/auto_login_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/item_margin_vertical"
+                android:layout_weight="1"
+                android:checked="@={loginModel.autoLogin}"
+                android:text="@string/login_auto_login"
+                android:visibility="@{loginModel.autoLoginVisibility}"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <!-- 登录按钮 -->
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/button_login_submit"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/item_margin_vertical"
+            android:text="@string/login_submit" />
+
+        <!-- 使用说明 与 忘记密码 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/login_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_help"
+                android:textColor="@drawable/color_login_text_pressed"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="center"
+                android:text="|"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/login_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_forget_password"
+                android:textColor="@drawable/color_login_text_pressed"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="edit_lesson_fragment_lesson_name">课程名称</string>
+    <string name="edit_lesson_fragment_name_abbr">课程简称</string>
+    <string name="edit_lesson_fragment_classroom">上课地点</string>
+    <string name="edit_lesson_fragment_teacher">授课教师</string>
+    <string name="edit_lesson_fragment_id">课程号</string>
+    <string name="edit_lesson_fragment_serial_id">课序号</string>
+    <string name="edit_lesson_fragment_must">必填</string>
+    <string name="edit_lesson_fragment_not_must">非必填</string>
+    <string name="edit_lesson_fragment_time">上课时间</string>
+    <string name="edit_lesson_fragment_weeks">上课周数</string>
+    <string name="edit_lesson_fragment_color">颜色</string>
+    <string name="edit_lesson_fragment_new_lesson">新建课程</string>
+    <string name="edit_lesson_fragment_edit_lesson">编辑课程</string>
+    <string name="edit_lesson_fragment_delete_lesson">删除课程</string>
+    <string name="edit_lesson_fragment_delete_lesson_sure">确认永久删除该课程?</string>
+    <string name="edit_lesson_need_name">保存失败,请输入课程名称!</string>
+    <string name="edit_lesson_need_weeks">保存失败,请至少选择一周上课周数!</string>
+    <string name="edit_lesson_save_together">是否同时修改同一课程的信息(课程名,课程简称,上课地点,授课教师,课程号,课序号)?</string>
+    <string-array name="edit_lesson_switch_list">
+        <item>前半\n学期</item>
+        <item>后半\n学期</item>
+        <item>单周</item>
+        <item>双周</item>
+        <item>全选</item>
+    </string-array>
+
+    <color name="edit_lesson_background">#FFF0F0F0</color>
+    <color name="edit_lesson_item_selected">#FF0d81fa</color>
+    <color name="edit_lesson_item_text">#FF999999</color>
+    <color name="edit_lesson_item_not_selected">#FFF5F5F5</color>
+    <color name="edit_lesson_item_text_not_selected">#E4E4E4</color>
+
+    <style name="CustomNumberPicker">
+        <item name="android:colorControlNormal">@color/transparent</item>
+        <item name="android:editTextColor">@color/szu_red</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="timetable_import_from_ehall_xnxq">%1$s学年第%2$s学期</string>
+    <string name="timetable_import_from_ehall_first">一</string>
+    <string name="timetable_import_from_ehall_second">二</string>
+
+    <string name="timetable_importing">正在导入中…</string>
+
+    <string name="timetable_import_from_other_tips">当前已登录账号: %s, 是否导入该账号下的课程表? </string>
+
+    <string name="timetable_import_from_other_yes">导入当前账号</string>
+
+    <string name="timetable_import_from_other_no">导入其它账号</string>
+
+    <string name="timetable_import_choose_timetable_title">请选择需要导入的课程表(将覆盖重复导入的课程表)</string>
+    <string name="timetable_import">导入</string>
+    <string name="timetable_select_all">导入</string>
+</resources>

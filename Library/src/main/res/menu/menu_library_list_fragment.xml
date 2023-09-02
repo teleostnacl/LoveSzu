@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图书清单用的menu -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/my_library_fragment_menu_select_all"
+        android:title="@string/select_all"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/library_list_fragment_menu_delete"
+        android:icon="@drawable/ic_library_list_fragment_delete_button"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom" />
+</menu>

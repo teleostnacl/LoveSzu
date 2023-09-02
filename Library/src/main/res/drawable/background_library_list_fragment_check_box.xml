@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/checked"
+        android:state_checked="true"
+        android:drawable="@drawable/background_library_list_fragment_check_box_vector_checked"/>
+
+    <item
+        android:id="@+id/unchecked"
+        android:state_checked="false"
+        android:drawable="@drawable/background_library_list_fragment_check_box_vector_unchecked"/>
+
+    <transition
+        android:fromId="@id/unchecked"
+        android:toId="@id/checked"
+        android:drawable="@drawable/background_library_list_fragment_check_box_ok_to_checked_anim"/>
+
+    <transition
+        android:fromId="@id/checked"
+        android:toId="@id/unchecked"
+        android:drawable="@drawable/background_library_list_fragment_check_box_ok_to_unchecked_anim"/>
+</animated-selector>

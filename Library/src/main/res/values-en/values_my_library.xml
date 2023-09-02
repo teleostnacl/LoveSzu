@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region 收藏图书 -->
+    <string name="my_library_collection_date"><![CDATA[<b><tt>Collecting Date:  </tt></b>]]></string>
+    <string name="my_library_collection_cancel_sure">Remove the book named %s from collection?</string>
+    <string name="my_library_collection_canceling">Removing from collection…</string>
+    <string name="my_library_collection_cancel_successful">Remove from collection successfully!</string>
+    <string name="my_library_collection_cancel_fail">Remove from collection failed!</string>
+    <!-- endregion -->
+
+    <!-- region 借阅历史 -->
+    <string name="my_library_borrow_history_loan_period"><![CDATA[<b><tt>Loan Period:  </tt></b>]]></string>
+    <string name="my_library_borrow_history_due_date"><![CDATA[<b><tt>Due Date:  </tt></b>]]></string>
+    <string name="my_library_borrow_history_latest_due_date"><![CDATA[<b><tt>Latest Due Date:  </tt></b>]]></string>
+    <string name="my_library_borrow_history_none">You don\'t have borrowed any books for current</string>
+    <!-- endregion -->
+
+    <!-- region 我的预约 与 我的预借 -->
+    <string name="my_library_reservation_location_get_book"><![CDATA[<b><tt>Location:  </tt></b>]]></string>
+    <string name="my_library_reservation_available_date"><![CDATA[<b><tt>Available Date:  </tt></b>]]></string>
+    <string name="my_library_reservation_latest_loan_date"><![CDATA[<b><tt>The latest loan date:  </tt></b>]]></string>
+
+    <string name="my_library_reservation_reserve_date"><![CDATA[<b><tt>Reserve Date:  </tt></b>]]></string>
+    <string name="my_library_reservation_reserve_none">You don\'t have reserved any books for current</string>
+
+    <string name="my_library_reservation_borrow_advance_date"><![CDATA[<b><tt>Request Date:  </tt></b>]]></string>
+    <string name="my_library_reservation_borrow_advance_status"><![CDATA[<b><tt>Status:  </tt></b>]]></string>
+    <string name="my_library_reservation_borrow_advance_none">You don\'t have borrowed advance any books for current</string>
+    <!-- endregion -->
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_bulletin"
+    app:startDestination="@id/bulletinMainFragment">
+
+    <fragment
+        android:id="@+id/bulletinMainFragment"
+        android:name="com.teleostnacl.szu.bulletin.fragment.BulletinMainFragment"
+        android:label="BulletinMainFragment">
+        <action
+            android:id="@+id/action_bulletinMainFragment_to_bulletinSearchFragment"
+            app:destination="@id/bulletinSearchFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bulletinSearchFragment"
+        android:name="com.teleostnacl.szu.bulletin.fragment.BulletinSearchFragment"
+        android:label="BulletinSearchFragment" />
+</navigation>

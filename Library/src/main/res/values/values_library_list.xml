@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="library_list_fragment_main">图书清单</string>
+
+    <string name="library_list_fragment_none">图书清单暂无图书!\n请在图书详细页点击馆藏信息进行添加</string>
+
+    <string name="library_list_fragment_add">已添加进图书清单中</string>
+    <string name="library_list_fragment_delete">是否从图书清单中移除所选的图书</string>
+    <string name="library_list_fragment_delete_none">请勾选需要从图书清单中移除的图书</string>
+
+    <integer name="animator_library_list_fragment_check_box_duration">256</integer>
+
+    <dimen name="library_list_fragment_check_box_size">28dp</dimen>
+
+    <style name="library_list_fragment_CheckBox">
+        <item name="colorAccent">@color/library_list_fragment_check_box_main_color</item>
+    </style>
+
+    <dimen name="library_list_fragment_corner_radius">12dp</dimen>
+
+    <color name="library_list_fragment_check_box_main_color">#448AFF</color>
+
+    <color name="library_list_fragment_check_box_second_color">#82B1FF</color>
+</resources>

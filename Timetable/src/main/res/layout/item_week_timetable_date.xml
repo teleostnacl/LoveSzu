@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="dateModel"
+            type="com.teleostnacl.szu.timetable.model.WeekTimetableModel.WeekTimetableDateModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_text"
+            android:text="@{dateModel.weekText}"
+            android:visibility="@{dateModel.weekVisibility}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:today="@{dateModel.isToday}" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:text="@{dateModel.dateText}"
+            android:visibility="@{dateModel.dateVisibility}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            app:today="@{dateModel.isToday}"/>
+
+    </LinearLayout>
+
+</layout>

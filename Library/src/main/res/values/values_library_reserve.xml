@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 预约预借使用的资源 -->
+<resources>
+     <string name="book_detail_fragment_borrow_advance_tip" translatable="false">
+         网上预借是根据读者提出的需求，馆员在书库里索取图书并送达指定地点的文献服务，普遍适用于远程书库或密集闭架书库的管理。\n\n
+         读者预借索书的时间规则:在您收到预借到书通知后，请务必在3天内到取书地点办理借书手续，否则视为违约，违约3次将被取消预借资格半年。\n\n
+         请您关注深圳大学图书馆公众号，并绑定校园卡，以便及时收到预借到书通知。或者留意您留下的邮箱，查看是否已经收到通知。\n\n
+         您也可以登录“我的图书馆－我的预借图书”进行预借查询，如显示该图书状态为“等待办理取书”，请您到已指定的取书地点办理借书手续。也可在本app内进行查询
+    </string>
+
+    <string name="book_detail_fragment_reserve_tip" translatable="false">
+        预约已借出尚未归还的书。请选择你的取书地点，图书馆会把预约到书送到你指定的校区。\n\n
+        请您关注深圳大学图书馆公众号，并绑定校园卡，以便及时收到预约到书通知。或者留意您留下的邮箱，查看是否已经收到通知。\n\n
+        您也可以登录“我的图书馆－预约图书信息”进行预约查询，如显示该图书状态为“等待办理取书”，请您到已指定的取书地点办理借书手续。也可在本app内进行查询
+    </string>
+
+    <string name="library_borrow_advance_query_information">预借信息查询中…</string>
+    <string name="library_reserve_query_information">预约信息查询中…</string>
+
+    <string name="book_detail_fragment_error_tip">您输入的Email或电话为空或不符合规则,请检查!</string>
+    <string name="book_detail_fragment_volume">卷期:&#160;&#160;</string>
+    <string name="book_detail_fragment_place">取书地点:</string>
+    <string name="book_detail_fragment_email" translatable="false">Email:&#160;&#160;</string>
+    <string name="book_detail_fragment_email_tip">图书馆将会通过该邮箱发送您的预借到馆通知</string>
+    <string name="book_detail_fragment_phone">电话:&#160;&#160;</string>
+    <string name="book_detail_fragment_phone_tip">图书馆将会通过该电话与您联系</string>
+
+    <string name="book_detail_fragment_reserve_error_tip">您输入的Email或电话为空或不符合规则,请检查!</string>
+
+    <string name="book_detail_fragment_submit_borrow_advance">提交预借</string>
+    <string name="book_detail_fragment_can_not_borrow_in_advance">当前没有可预借的书</string>
+    <string name="book_detail_fragment_borrow_in_advance_successful">预借请求成功,请注意查询到馆日期</string>
+    <string name="book_detail_fragment_borrow_in_advance_fail">预借失败, 请重试!</string>
+    <string name="book_detail_fragment_user_borrow_in_advance_full">对不起，您的预借数量已满，请到馆阅览</string>
+    <string name="book_detail_fragment_user_borrow_in_advance_repeat">您已预借过这本书，不能重复提交请求</string>
+    <string name="book_detail_fragment_user_borrow_in_advance_error1">对不起，您所属的用户类型对于可预借的典藏地没有预借权，请到馆阅览</string>
+    <string name="book_detail_fragment_user_borrow_in_advance_error3">对不起，书库预借量已满，请到馆阅览</string>
+    <string name="book_detail_fragment_user_borrow_in_advance_error4">当前没有可预借图书</string>
+    <string name="book_detail_fragment_borrow_in_advance_handling">正在处理预借信息…</string>
+
+    <string name="bool_detail_fragment_submit_reserve">提交预约</string>
+    <string name="book_detail_fragment_can_not_reserve">当前没有可预约的书</string>
+    <string name="book_detail_fragment_reserve_successful">预约请求成功,请注意查询到馆日期</string>
+    <string name="book_detail_fragment_reserve_no">根据图书馆预约规则，当已出借册数至少为1册时方可预约</string>
+    <string name="book_detail_fragment_reserve_full">根据图书馆预约规则，此书预约排队人数已达上限</string>
+    <string name="book_detail_fragment_reserve_fail">预约失败, 请重试</string>
+    <string name="book_detail_fragment_user_reserve_full">对不起，您的预约借数量已满，请到馆阅览</string>
+    <string name="book_detail_fragment_reserve_handling">正在处理预约信息…</string>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图书详细页基本信息使用的View -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="book"
+            type="com.teleostnacl.szu.library.model.detail.BookModel" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_card_view">
+
+            <ImageView
+                android:id="@+id/fragment_library_book_detail_cover"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@null"
+                android:paddingVertical="@dimen/book_detail_cover_vertical_padding"
+                android:scaleType="fitCenter"
+                android:src="@{book.cover}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="@string/book_detail_cover_constraint_dimension_ratio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fragment_library_book_detail_cover"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_title}"
+                    app:text="@{book.title}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_author}"
+                    app:text="@{book.author}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_publisher}"
+                    app:text="@{book.publisher}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_year}"
+                    app:text="@{book.publishYear}" />
+
+                <include
+                    layout="@layout/layout_item_text_with_icon"
+                    app:image="@{@drawable/ic_library_book_can_lend}"
+                    app:text="@{book.canLend}" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

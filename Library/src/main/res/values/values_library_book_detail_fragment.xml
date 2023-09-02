@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="library_book_detail_fragment_loading">加载图书详细信息中…</string>
+
+    <!-- region 图书信息 -->
+    <string name="library_book_title"><![CDATA[<b><tt>书名:  </tt></b>]]></string>
+    <string name="library_book_author"><![CDATA[<b><tt>作者:  </tt></b>]]></string>
+    <string name="library_book_title_and_author"><![CDATA[<b><tt>书目信息:  </tt></b>]]></string>
+    <string name="library_book_publish_year"><![CDATA[<b><tt>出版年:  </tt></b>]]></string>
+    <string name="library_book_publisher"><![CDATA[<b><tt>出版社:  </tt></b>]]></string>
+    <string name="library_book_publisher_and_year"><![CDATA[<b><tt>出版社及出版年:  </tt></b>]]></string>
+    <string name="library_book_call_number"><![CDATA[<b><tt>索取号:  </tt></b>]]></string>
+    <string name="library_book_can_lend"><![CDATA[<b><tt>可借:  </tt></b>]]></string>
+    <string name="library_book_detail_information"><![CDATA[<b><tt>图书简介:  </tt></b>]]></string>
+
+    <!-- 借阅信息 -->
+    <string name="book_detail_fragment_loan_total"><![CDATA[<b><tt>近1年借阅数:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collect_total"><![CDATA[<b><tt>总收藏数:  </tt></b>]]></string>
+    <string name="book_detail_fragment_total_votes"><![CDATA[<b><tt>总评分数:  </tt></b>]]></string>
+    <string name="book_detail_fragment_score_average"><b>平均评分:&#160;&#160;</b></string>
+    <string name="book_detail_fragment_my_score"><b>我的评分:&#160;&#160;</b></string>
+
+    <!-- 藏书信息 -->
+    <string name="book_detail_fragment_collection_site"><![CDATA[<b><tt>馆藏地:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_shelf"><![CDATA[<b><tt>排/架参考:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_accession_number"><![CDATA[<b><tt>登录号:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_volume"><![CDATA[<b><tt>卷期:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_state"><![CDATA[<b><tt>状态:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_loan_type"><![CDATA[<b><tt>借阅类型:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_reservation_queue"><![CDATA[<b><tt>预约队列:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_reader_queue_this_kind"><![CDATA[<b><tt>本类读者队列:  </tt></b>]]></string>
+    <!-- endregion -->
+    <!-- 图书封面的比例 -->
+    <string name="book_detail_cover_constraint_dimension_ratio" translatable="false">w, 2:3</string>
+
+    <!-- region menu -->
+    <string name="book_detail_fragment_menu_collect">我要收藏</string>
+    <string name="book_detail_fragment_menu_score">我要评分</string>
+    <string name="book_detail_fragment_menu_borrowing_advanced">预借未借出在书库的书</string>
+    <string name="book_detail_fragment_menu_reserve">预约已借出尚未归还的书</string>
+    <string name="book_detail_fragment_menu_related_borrowing">相关图书</string>
+    <string name="book_detail_fragment_menu_open_in_browser">在浏览器中打开</string>
+    <!-- endregion -->
+
+    <!-- region 收藏相关 -->
+    <string name="book_detail_fragment_collection_handling">正在处理收藏信息,请稍候…</string>
+    <string name="book_detail_fragment_collect_success">收藏成功!</string>
+    <string name="book_detail_fragment_collected">您已收藏该书!</string>
+    <string name="book_detail_fragment_collect_failed">收藏失败!</string>
+    <!-- endregion -->
+
+    <!-- region 评分相关 -->
+    <string name="book_detail_fragment_score">评分</string>
+    <string name="book_detail_times">&#160;次</string>
+    <string name="book_detail_fragment_score_view_points">分</string>
+    <string name="book_detail_fragment_score_view_point">分</string>
+    <string name="book_detail_fragment_score_handling">正在处理评分信息,请稍候…</string>
+    <string name="book_detail_fragment_score_success">评分成功,您给出的评分为%1$s</string>
+    <string name="book_detail_fragment_score_fail">评分失败,请重试!</string>
+    <!-- endregion -->
+
+    <string name="book_detail_related_book_loading">加载《%s》相关图书中…</string>
+    <string name="book_detail_related_book_none">该书暂无相关借阅</string>
+
+    <!-- region 评分页面所使用的style -->
+    <!-- ConstraintLayout使用的style -->
+    <style name="style_library_book_detail_score_constraint_layout">
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">20dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- TextView使用的Style -->
+    <style name="style_library_book_detail_score_text_view">
+        <item name="android:textColor">@color/text_color_common</item>
+        <item name="android:paddingHorizontal">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Divider所使用的Style -->
+    <style name="style_library_book_detail_score_material_divider">
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <!-- ImageView所使用的Style -->
+    <style name="style_library_book_detail_score_image_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:src">@drawable/xing</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- 用于控制封面时的垂直padding -->
+    <dimen name="book_detail_cover_vertical_padding">8dp</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图书详细页所使用的菜单项 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/fragment_library_book_detail_menu_collect"
+        android:title="@string/book_detail_fragment_menu_collect" />
+
+    <item android:id="@+id/fragment_library_book_detail_menu_score"
+        android:title="@string/book_detail_fragment_menu_score" />
+
+    <item android:id="@+id/fragment_library_book_detail_menu_borrowing_advanced"
+        android:title="@string/book_detail_fragment_menu_borrowing_advanced" />
+
+    <item android:id="@+id/fragment_library_book_detail_menu_reserve"
+        android:title="@string/book_detail_fragment_menu_reserve" />
+
+    <item android:id="@+id/fragment_library_book_detail_menu_related_borrowing"
+        android:title="@string/book_detail_fragment_menu_related_borrowing" />
+
+    <item android:id="@+id/fragment_library_book_detail_menu_open_in_browser"
+        android:title="@string/book_detail_fragment_menu_open_in_browser" />
+
+</menu>

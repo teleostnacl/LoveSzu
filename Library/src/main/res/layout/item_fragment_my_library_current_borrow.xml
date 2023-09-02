@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 当前借阅item -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="currentBorrowModel"
+            type="com.teleostnacl.szu.library.model.user.CurrentBorrowModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 书目信息 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:paddingHorizontal="@dimen/padding_card_view"
+                android:paddingTop="8dp"
+                android:text="@{currentBorrowModel.titleAndAuthor}"
+                android:textColor="@color/text_color_common" />
+
+            <!-- 卷期 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/padding_card_view"
+                android:visibility="@{currentBorrowModel.volumeVisibility}"
+                app:image="@{@drawable/ic_library_book_volume}"
+                app:text="@{currentBorrowModel.volume}" />
+
+            <!-- 借阅类型 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/padding_card_view"
+                app:image="@{@drawable/ic_library_book_type}"
+                app:text="@{currentBorrowModel.bookType}" />
+
+            <!-- 登录号 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/padding_card_view"
+                app:image="@{@drawable/ic_library_book_accession_number}"
+                app:text="@{currentBorrowModel.accessionNumber}" />
+
+            <!-- 借期 -->
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{currentBorrowModel.loanPeriod}" />
+
+            <!-- 最晚应还于 -->
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:lastDueDate="@{currentBorrowModel.lastDueDate}" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

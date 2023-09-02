@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="scheme_detail_loading">加载培养方案中…</string>
+
+    <string name="scheme_detail_lesson_name"><![CDATA[<b><tt>课程名: </tt></b>%s]]></string>
+    <string name="scheme_detail_lesson_number"><![CDATA[<b><tt>课程号[总号]: </tt></b>%s[%s]]]></string>
+    <string name="scheme_detail_lesson_date"><![CDATA[<b><tt>建议修读: </tt></b>%s]]></string>
+    <string name="scheme_detail_lesson_type"><![CDATA[<b><tt>课程性质:</tt></b> %s<b><tt> 学分:</tt></b> %s]]></string>
+
+    <string name="scheme_detail_title_credits">要求学分: %s [%s]</string>
+
+    <string name="scheme_detail_credits">要求学分: %s</string>
+
+    <!-- 培养方案详细使用的字体颜色 -->
+    <color name="text_color_scheme_detail">#acace1</color>
+
+    <color name="color_scheme_detail_tab">#1abc9c</color>
+
+    <!-- 培养方案标题的字体大小 -->
+    <dimen name="text_size_scheme_detail_title">20sp</dimen>
+
+    <!-- 培养方案模块的字体大小 -->
+    <dimen name="text_size_scheme_module_title">18sp</dimen>
+
+    <!-- 培养方案课程组的字体大小 -->
+    <dimen name="text_size_scheme_group_title">17sp</dimen>
+
+    <!-- 要求学分的字体大小 -->
+    <dimen name="text_size_scheme_detail_credits">14sp</dimen>
+
+    <!-- 培养方案详细页的开始的padding/margin值 -->
+    <dimen name="dimen_start_scheme_detail">8dp</dimen>
+    <!-- 培养方案详细页的末尾的padding/margin值 -->
+    <dimen name="dimen_horizontal_scheme_detail">12dp</dimen>
+
+    <!-- 培养方案详细页的一个tab的宽度值 -->
+    <dimen name="dimen_width_scheme_detail_tab_view">16dp</dimen>
+
+    <dimen name="dimen_width_scheme_detail_tab">2dp</dimen>
+</resources>

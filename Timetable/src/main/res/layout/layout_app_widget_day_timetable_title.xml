@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 每日课表 app widget 的标题 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="24dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="4dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/drawable_timetable" />
+
+    <TextView
+        android:id="@+id/app_widget_day_timetable_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/image_view"
+        android:gravity="center"
+        android:textColor="@color/text_color_common"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app_widget_day_timetable_week"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        tools:ignore="RelativeOverlap" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 显示每学期平均基点的视图 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="gradeModel"
+            type="com.teleostnacl.szu.grade.model.SemesterGradesModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view"
+            app:layout_constraintEnd_toStartOf="@id/grade_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- 学分 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/drawable_grade_credit}"
+                app:text="@{gradeModel.credits}" />
+
+            <!-- 平均学分绩点 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/drawable_grade_points}"
+                app:text="@{gradeModel.grade}" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

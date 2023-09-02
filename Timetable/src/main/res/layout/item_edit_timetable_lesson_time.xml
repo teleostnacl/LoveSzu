@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="timeModel"
+            type="com.teleostnacl.szu.timetable.model.Timetable.LessonTimeModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingHorizontal="@dimen/timetable_edit_timetable_secondary_margin_horizontal"
+        android:paddingVertical="@dimen/timetable_edit_timetable_margin_vertical">
+
+        <TextView
+            android:id="@+id/item_edit_timetable_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{timeModel.no}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/timetable_edit_timetable_text_size"
+            app:layout_constraintBottom_toTopOf="@id/item_edit_timetable_time_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_edit_timetable_time_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{timeModel.time}"
+            android:textSize="@dimen/timetable_edit_timetable_content_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/item_edit_timetable_time_title"
+            app:layout_constraintTop_toBottomOf="@id/item_edit_timetable_time_title" />
+
+        <ImageView
+            android:id="@+id/item_edit_timetable_time_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_timetable_edit_timetable_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="collection"
+            type="com.teleostnacl.szu.library.model.detail.LibraryCollectionModel" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/style_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_view">
+
+            <!-- 藏书地点 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_location}"
+                app:text="@{collection.collectionSite}" />
+
+            <!-- 货架号 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{collection.shelfReferenceVisibility}"
+                app:image="@{@drawable/ic_library_book_shelve_reference}"
+                app:text="@{collection.shelfReference}" />
+
+            <!-- 索引号 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_call_number}"
+                app:text="@{collection.callNumber}" />
+
+            <!-- 登录号 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_accession_number}"
+                app:text="@{collection.accessionNumber}" />
+
+            <!-- 卷期 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{collection.volumeVisibility}"
+                app:image="@{@drawable/ic_library_book_volume}"
+                app:text="@{collection.volume}" />
+
+            <!-- 状态 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_can_lend}"
+                app:text="@{collection.state}" />
+
+            <!-- 图书类型 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                app:image="@{@drawable/ic_library_book_type}"
+                app:text="@{collection.loanType}" />
+
+            <!-- 预约队列 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{collection.reservationQueueVisibility}"
+                app:image="@{@drawable/ic_library_book_queue}"
+                app:text="@{collection.reservationQueue}" />
+
+            <!-- 本类读者队列 -->
+            <include
+                layout="@layout/layout_item_text_with_icon"
+                android:visibility="@{collection.readerQueueThisKindVisibility}"
+                app:image="@{@drawable/ic_library_book_queue}"
+                app:text="@{collection.readerQueueThisKind}" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

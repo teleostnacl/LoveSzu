@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="weekTimetableTimeModel"
+            type="com.teleostnacl.szu.timetable.model.WeekTimetableModel.WeekTimetableTimeModel" />
+
+        <import type="android.view.View"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="SmallSp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weekTimetableTimeModel.period}"
+            android:textColor="@color/text_color_common"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@{weekTimetableTimeModel.startTime}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{weekTimetableTimeModel.isShowTime()}"
+            android:textSize="9sp" />
+
+        <TextView
+            android:text="@{weekTimetableTimeModel.endTime}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{weekTimetableTimeModel.isShowTime()}"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- region 搜索栏 -->
+                <ImageView
+                    android:id="@+id/fragment_library_main_user_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:focusable="true"
+                    android:src="@drawable/icon_library_user"
+                    app:layout_constraintBottom_toBottomOf="@id/fragment_library_main_search_view"
+                    app:layout_constraintDimensionRatio="w, 1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/fragment_library_main_search_view" />
+
+                <ImageView
+                    android:id="@+id/fragment_library_main_search_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:contentDescription="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fragment_library_main_user_button"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/abc_ic_search_api_material" />
+
+                <TextView
+                    android:id="@+id/fragment_library_main_search_view_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="@string/fragment_library_main_search_tips"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/fragment_library_main_search_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fragment_library_main_search_view"
+                    app:layout_constraintTop_toTopOf="@id/fragment_library_main_search_view" />
+                <!-- endregion -->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- 推荐内容 -->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/fragment_library_main_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_library_main_search_view">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_white_background"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="@dimen/padding_fragment_library_main"
+                android:scrollbars="none">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 热门搜索关键词 -->
+                    <ImageView
+                        android:id="@+id/fragment_library_main_hot_search_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintBottom_toBottomOf="@id/fragment_library_main_hot_search_title"
+                        app:layout_constraintDimensionRatio="w, 1:1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/fragment_library_main_hot_search_title"
+                        app:srcCompat="@drawable/icon_library_hot" />
+
+                    <TextView
+                        android:id="@+id/fragment_library_main_hot_search_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_horizontal_fragment_library_main_hot_title"
+                        android:layout_marginTop="@dimen/padding_top_fragment_library_main_hot_title"
+                        android:text="@string/fragment_library_main_search_hot_keys"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="@dimen/text_size_fragment_library_main_hot_title"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/fragment_library_main_hot_search_icon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fragment_library_main_hot_search_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_fragment_library_main_card_view_outer"
+                        app:cardCornerRadius="@dimen/radius_corner_fragment_library_main_card_view"
+                        app:layout_constraintTop_toBottomOf="@id/fragment_library_main_hot_search_title">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/fragment_library_main_hot_search_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never"
+                            android:padding="@dimen/padding_fragment_library_main_hot_recycler_view" />
+
+                        <!-- 热门搜索关键词为空的提示 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_library_main_hot_search_blank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/padding_fragment_library_main_blank"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/fail_image"
+                                android:layout_width="@dimen/size_fragment_library_main_blank_image_view"
+                                android:layout_height="@dimen/size_fragment_library_main_blank_image_view"
+                                android:contentDescription="@null"
+                                android:src="@drawable/error"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fail_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:paddingVertical="8dp"
+                                android:text="@string/fragment_library_main_search_hot_keys_blank"
+                                android:textSize="@dimen/text_size_paging_recycler_view_small_size_tips"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/fail_image" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- 热门借阅与收藏 -->
+                    <ImageView
+                        android:id="@+id/fragment_library_main_hot_loan_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintBottom_toBottomOf="@id/fragment_library_main_hot_loans_title"
+                        app:layout_constraintDimensionRatio="w, 1:1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/fragment_library_main_hot_loans_title"
+                        app:srcCompat="@drawable/icon_library_hot" />
+
+                    <TextView
+                        android:id="@+id/fragment_library_main_hot_loans_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_horizontal_fragment_library_main_hot_title"
+                        android:layout_marginTop="@dimen/padding_top_fragment_library_main_hot_title"
+                        android:text="@string/fragment_library_main_search_hot_loan"
+                        android:textColor="@color/text_color_common"
+                        android:textSize="@dimen/text_size_fragment_library_main_hot_title"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/fragment_library_main_hot_loan_icon"
+                        app:layout_constraintTop_toBottomOf="@id/fragment_library_main_hot_search_card_view" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_fragment_library_main_card_view_outer"
+                        app:cardCornerRadius="@dimen/radius_corner_fragment_library_main_card_view"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/fragment_library_main_hot_loans_title">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/fragment_library_main_hot_loans_recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+                                android:overScrollMode="never" />
+
+                        </RelativeLayout>
+
+                        <!-- 热门借阅与收藏为空的提示 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_library_main_hot_loans_blank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/padding_fragment_library_main_blank"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/fragment_library_main_hot_loans_blank_fail_image"
+                                android:layout_width="@dimen/size_fragment_library_main_blank_image_view"
+                                android:layout_height="@dimen/size_fragment_library_main_blank_image_view"
+                                android:contentDescription="@null"
+                                android:src="@drawable/error"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fragment_library_main_hot_loans_blank_fail_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:paddingVertical="8dp"
+                                android:text="@string/fragment_library_main_search_hot_loan_blank"
+                                android:textSize="@dimen/text_size_paging_recycler_view_small_size_tips"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/fragment_library_main_hot_loans_blank_fail_image" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</layout>

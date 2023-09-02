@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_library">图书馆</string>
+
+    <string name="library_loading">加载图书馆中…</string>
+</resources>

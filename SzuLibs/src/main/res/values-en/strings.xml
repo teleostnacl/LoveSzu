@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="need_login">In this network condition, you need to login to continue!</string>
+</resources>

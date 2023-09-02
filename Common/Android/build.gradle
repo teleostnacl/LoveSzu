@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "common.gradle"
+
+android {
+    namespace 'com.teleostnacl.common.android'
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    api project(path: ':Common:Java')
+
+    api 'androidx.appcompat:appcompat:1.6.1'
+    api 'com.google.android.material:material:1.9.0'
+    api 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    api 'io.reactivex.rxjava3:rxandroid:3.0.2'
+
+    api 'com.github.fornewid:neumorphism:0.3.2'
+
+    api 'androidx.paging:paging-runtime:3.1.1'
+    api 'androidx.paging:paging-rxjava3:3.1.1'
+
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    api "androidx.room:room-runtime:$ROOM_VERSION"
+    annotationProcessor "androidx.room:room-compiler:$ROOM_VERSION"
+
+    api 'androidx.navigation:navigation-fragment:2.5.3'
+    api 'androidx.navigation:navigation-ui:2.5.3'
+}

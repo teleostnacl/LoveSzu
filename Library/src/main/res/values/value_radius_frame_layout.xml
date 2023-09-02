@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="radius_frame_layout_regex" translatable="false">%1$s, %2$s, %3$s, %4$s</string>
+
+    <declare-styleable name="RadiusFrameLayout">
+        <!-- 整体圆角的大小 -->
+        <attr name="radius" format="dimension" />
+
+        <!-- 按左上, 右上, 右下, 左下的顺序定义圆角半径(用逗号分隔) -->
+        <attr name="cornersRadius" format="string" />
+
+        <!-- 左边圆角大小 -->
+        <attr name="leftRadius" format="dimension" />
+        <!-- 右边圆角大小 -->
+        <attr name="rightRadius" format="dimension" />
+        <!-- 上边圆角大小 -->
+        <attr name="topRadius" format="dimension" />
+        <!-- 下边圆角大小 -->
+        <attr name="bottomRadius" format="dimension" />
+
+        <!-- 左上圆角大小 -->
+        <attr name="topLeftRadius" format="dimension" />
+        <!-- 右上圆角大小 -->
+        <attr name="topRightRadius" format="dimension" />
+        <!-- 右下圆角大小 -->
+        <attr name="bottomRightRadius" format="dimension" />
+        <!-- 左下圆角大小 -->
+        <attr name="bottomLeftRadius" format="dimension" />
+
+        <attr name="mode" format="enum" >
+            <enum name="fill" value="1"/>
+            <enum name="stroke" value="2"/>
+        </attr>
+
+        <!-- 背景颜色 -->
+        <attr name="backgroundColor" format="color"/>
+
+        <!-- 边框 -->
+        <attr name="strokeSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

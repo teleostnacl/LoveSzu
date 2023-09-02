@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_9
+    targetCompatibility = JavaVersion.VERSION_1_9
+}
+
+dependencies {
+    api 'io.reactivex.rxjava3:rxjava:3.1.7'
+
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+}

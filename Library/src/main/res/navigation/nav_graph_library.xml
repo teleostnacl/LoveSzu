@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_library"
+    app:startDestination="@id/libraryMainFragment">
+
+    <fragment
+        android:id="@+id/libraryMainFragment"
+        android:name="com.teleostnacl.szu.library.fragment.LibraryMainFragment"
+        android:label="LibraryMainFragment">
+        <action
+            android:id="@+id/action_libraryMainFragment_to_librarySearchFragment"
+            app:destination="@id/librarySearchFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+        <action
+            android:id="@+id/action_libraryMainFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+        <action
+            android:id="@+id/action_libraryMainFragment_to_myLibraryMainFragment"
+            app:destination="@id/myLibraryMainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/librarySearchFragment"
+        android:name="com.teleostnacl.szu.library.fragment.LibrarySearchFragment"
+        android:label="LibrarySearchFragment">
+        <action
+            android:id="@+id/action_librarySearchFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.teleostnacl.szu.library.fragment.detail.BookDetailFragment"
+        android:label="BookDetailFragment">
+        <action
+            android:id="@+id/action_bookDetailFragment_to_reserveFragment"
+            app:destination="@id/reserveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+        <action
+            android:id="@+id/action_bookDetailFragment_to_relatedBookFragment"
+            app:destination="@id/relatedBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reserveFragment"
+        android:name="com.teleostnacl.szu.library.fragment.detail.ReserveFragment"
+        android:label="ReserveFragment" />
+    <fragment
+        android:id="@+id/myLibraryMainFragment"
+        android:name="com.teleostnacl.szu.library.fragment.user.MyLibraryMainFragment"
+        android:label="MyLibraryMainFragment">
+        <action
+            android:id="@+id/action_myLibraryMainFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/relatedBookFragment"
+        android:name="com.teleostnacl.szu.library.fragment.detail.RelatedBookFragment"
+        android:label="RelatedBookFragment">
+        <action
+            android:id="@+id/action_relatedBookFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryListFragment"
+        android:name="com.teleostnacl.szu.library.fragment.LibraryListFragment"
+        android:label="LibraryListFragment">
+        <action
+            android:id="@+id/action_libraryListFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:restoreState="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_libraryListFragment"
+        app:destination="@id/libraryListFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:restoreState="true" />
+</navigation>

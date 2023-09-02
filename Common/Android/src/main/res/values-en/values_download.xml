@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download">Download</string>
+
+    <string name="download_start">Start to download %1$s!</string>
+    <string name="download_exist">The Downloading %1$s task is running!</string>
+    <string name="download_complete">%1$s Download Completely!</string>
+    <string name="download_cancel">Downloading %1$s has been canceled!</string>
+</resources>

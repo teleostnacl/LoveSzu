@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="paper_edit_paper_basic_information_title">编辑英文题目摘要关键词和致谢</string>
+
+    <string name="paper_edit_paper_basic_information_tips">此页面需填写完整的论文英文题目, 摘要, 关键词以及致谢的内容</string>
+
+    <string name="paper_edit_paper_basic_information_abstract">摘要</string>
+    <string name="paper_edit_paper_basic_information_title_en">英文题目</string>
+    <string name="paper_edit_paper_basic_information_abstract_en">英文摘要</string>
+    <string name="paper_edit_paper_basic_information_keywords">关键词%s</string>
+    <string name="paper_edit_paper_basic_information_keywords_en">英文关键词%s</string>
+    <string name="paper_edit_paper_basic_information_thanks">致谢</string>
+    <string name="paper_edit_paper_basic_information_add_keywords">增加关键词</string>
+
+    <string name="paper_edit_paper_basic_information_delete_keyword">是否删除关键词%1$s</string>
+    <string name="paper_edit_paper_basic_information_delete_keyword_en">是否删除英文关键词%1$s</string>
+</resources>

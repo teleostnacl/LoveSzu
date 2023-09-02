@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.teleostnacl.szu.electricity.model.LiHuRemainModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.date}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.remain}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.remainBuying}" />
+
+        <include
+            layout="@layout/layout_item_text_with_icon"
+            app:image="@{@drawable/drawable_electricity}"
+            app:text="@{model.remainSending}" />
+    </LinearLayout>
+</layout>

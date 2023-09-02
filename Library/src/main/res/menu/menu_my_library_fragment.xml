@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/my_library_fragment_menu_help"
+        android:icon="@drawable/icon_szu_help"
+        android:title="@string/help"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/my_library_fragment_menu_download"
+        android:icon="@drawable/icon_library_my_library_download"
+        android:title="@string/my_library_borrow_history_download"
+        app:showAsAction="ifRoom" />
+</menu>

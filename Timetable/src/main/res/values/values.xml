@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 编辑课程 编辑课程表公用的资源 -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <color name="color_timetable_edit_text">#FFF0F0F0</color>
+    <color name="color_timetable_edit_text_hint">#FFDB5A6B</color>
+
+    <dimen name="height_app_bar">120dp</dimen>
+
+    <!-- 编辑框文字的大小 -->
+    <dimen name="text_size_timetable_edit_text">18sp</dimen>
+    <!-- 编辑框文字的margin -->
+    <dimen name="margin_text_timetable_edit_text">18dp</dimen>
+    <!-- 整体边界的margin -->
+    <dimen name="margin_horizontal_timetable_edit_text">16dp</dimen>
+    <dimen name="margin_vertical_timetable_edit_text">8dp</dimen>
+
+    <string name="hint_timetable_edit_text_must">必填</string>
+    <string name="hint_timetable_edit_text_not_must">非必填</string>
+</resources>

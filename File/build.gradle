@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "../Common/Android/common.gradle"
+
+android {
+    namespace 'com.teleostnacl.szu.file'
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':SzuLibs')
+}

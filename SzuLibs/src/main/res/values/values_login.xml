@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="login_welcome">欢迎使用!</string>
+
+    <string name="login_today_date_with_current_user">今天是: %s 欢迎使用!</string>
+</resources>

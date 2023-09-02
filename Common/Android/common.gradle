@@ -1,0 +1,54 @@
+/**
+ * @param version 指定的VersionName
+ * @return 返回指定versionName带有日期(yyMMdd)
+ */
+static def getVersionNameWithDate(String version) {
+    return version + "_" + getVersionCodeWithDate()
+}
+
+/**
+ *
+ * @return 返回日期(yyMMdd)
+ */
+static def getVersionCodeWithDate() {
+    return new Date().format("yyMMdd").toInteger()
+}
+
+ext {
+    versionCodeWithDate = this.&getVersionCodeWithDate
+    versionNameWithDate = this.&getVersionNameWithDate
+
+    android {
+        compileSdk 34
+
+        defaultConfig {
+            minSdk 27
+            targetSdk 34
+
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            consumerProguardFiles "consumer-rules.pro"
+        }
+
+        buildTypes {
+            release {
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                minifyEnabled true
+                zipAlignEnabled true
+            }
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_9
+            targetCompatibility JavaVersion.VERSION_1_9
+        }
+    }
+
+    // room组件的版本号
+    ROOM_VERSION = "2.5.2"
+
+    dependencies {
+        testImplementation 'junit:junit:4.13.2'
+        androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+        androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    }
+}

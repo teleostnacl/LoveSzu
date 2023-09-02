@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download">下载</string>
+
+    <string name="download_start">下载开始: %1$s</string>
+    <string name="download_exist">下载任务已经存在: %1$s</string>
+    <string name="download_complete">下载完成: %1$s</string>
+    <string name="download_cancel">下载已取消 :%1$s</string>
+</resources>

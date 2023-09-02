@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="timetable_week_timetable_fragment_noon">午休</string>
+    <string name="timetable_week_timetable_fragment_dusk">晚休</string>
+
+    <string name="timetable_week_timetable_week_current">第%d周</string>
+
+    <string name="timetable_week_timetable_menu_add_timetable">新建课表</string>
+    <string name="timetable_week_timetable_menu_edit_timetable">编辑课表</string>
+    <string name="timetable_week_timetable_menu_import_from_ehall">从办事大厅导入</string>
+    <string name="timetable_week_timetable_menu_create_timetable_shortcut">创建课程表桌面快捷方式</string>
+    <string name="timetable_week_timetable_create_timetable_shortcut_success">创建课程表桌面快捷方式成功!</string>
+    <string name="timetable_week_timetable_create_timetable_shortcut_fail">创建桌面快捷方式失败,请检查设备是否支持, 并检查权限</string>
+
+
+    <string name="timetable_week_timetable_empty">当前暂无课程表</string>
+
+    <string name="timetable_week_timetable_error">加载指定课程表失败</string>
+
+    <string name="layout_lesson_information_title">课程详细</string>
+    <string name="layout_lesson_information_lesson_name"><![CDATA[<b><tt>课程名称:  </tt></b>]]></string>
+    <string name="layout_lesson_information_lesson_abbr"><![CDATA[<b><tt>课程简称:  </tt></b>]]></string>
+    <string name="layout_lesson_information_lesson_location"><![CDATA[<b><tt>上课地点:  </tt></b>]]></string>
+    <string name="layout_lesson_information_lesson_teachers"><![CDATA[<b><tt>授课教师:  </tt></b>]]></string>
+    <string name="layout_lesson_information_lesson_number"><![CDATA[<b><tt>课程号:  </tt></b>]]></string>
+    <string name="layout_lesson_information_lesson_time"><![CDATA[<b><tt>上课时间:  </tt></b>]]></string>
+    <string name="layout_lesson_information_lesson_weeks"><![CDATA[<b><tt>上课周数:  </tt></b>]]></string>
+
+    <color name="timetable_icon_add_background_color">#FFF6F6F6</color>
+    <color name="timetable_icon_add_color">#FFC5C5C5</color>
+
+    <color name="week_timetable_fragment_timetable_selected">#448AFF</color>
+    <color name="timetable_week_today_color">#448AFF</color>
+
+    <dimen name="layout_lesson_information_margin">6dp</dimen>
+</resources>

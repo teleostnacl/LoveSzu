@@ -1,0 +1,10 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "Android/common.gradle"
+
+android {
+    namespace 'com.teleostnacl.common'
+}

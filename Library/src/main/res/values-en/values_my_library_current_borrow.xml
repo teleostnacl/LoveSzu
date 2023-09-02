@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_library_current_borrow_at">Borrowed at&#160;</string>
+    <string name="my_library_current_borrow_should_be_back_latest_at">Should be back latest at&#160;</string>
+    <string name="my_library_current_borrow_has_been_reserved">This book has been reserved!</string>
+    <string name="my_library_current_borrow_overdue">\n(Overdue)</string>
+    <string name="my_library_current_borrow_will_be_on_due">\n(Will be on due)</string>
+</resources>

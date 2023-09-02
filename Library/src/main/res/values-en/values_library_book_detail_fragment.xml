@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_book_detail_fragment_loading">Loading Book Detail…</string>
+
+    <!-- region 图书信息 -->
+    <string name="library_book_title"><![CDATA[<b><tt>Title:  </tt></b>]]></string>
+    <string name="library_book_author"><![CDATA[<b><tt>Author:  </tt></b>]]></string>
+    <string name="library_book_title_and_author"><![CDATA[<b><tt>Title/Author:  </tt></b>]]></string>
+    <string name="library_book_publish_year"><![CDATA[<b><tt>Publish Year:  </tt></b>]]></string>
+    <string name="library_book_publisher"><![CDATA[<b><tt>Publisher:  </tt></b>]]></string>
+    <string name="library_book_publisher_and_year"><![CDATA[<b><tt>Publisher/Year:  </tt></b>]]></string>
+    <string name="library_book_call_number"><![CDATA[<b><tt>Call Number:  </tt></b>]]></string>
+    <string name="library_book_can_lend"><![CDATA[<b><tt>Can Lend:  </tt></b>]]></string>
+    <string name="library_book_detail_information"><![CDATA[<b><tt>Information:  </tt></b>]]></string>
+
+    <!-- 借阅信息 -->
+    <string name="book_detail_fragment_loan_total">
+        <![CDATA[<b><tt>Latest 1 Years, The Loan Total:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collect_total">
+        <![CDATA[<b><tt>The Collect Total:  </tt></b>]]></string>
+    <string name="book_detail_fragment_total_votes">
+        <![CDATA[<b><tt>The Votes Total:  </tt></b>]]></string>
+    <string name="book_detail_fragment_score_average"><![CDATA[<b><tt>Average Score:  </tt></b>]]></string>
+    <string name="book_detail_fragment_my_score"><![CDATA[<b><tt>My Score:  </tt></b>]]></string>
+    <!-- 藏书信息 -->
+    <string name="book_detail_fragment_collection_site">
+        <![CDATA[<b><tt>Collection Site:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_shelf">
+        <![CDATA[<b><tt>Shelf:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_accession_number">
+        <![CDATA[<b><tt>Access Number:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_volume">
+        <![CDATA[<b><tt>Volume/Issue:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_state">
+        <![CDATA[<b><tt>Status:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_loan_type">
+        <![CDATA[<b><tt>Loan Type:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_reservation_queue">
+        <![CDATA[<b><tt>Reservation Queue:  </tt></b>]]></string>
+    <string name="book_detail_fragment_collection_reader_queue_this_kind">
+        <![CDATA[<b><tt>Reader Queue of this Kind:  </tt></b>]]></string>
+
+    <!-- endregion -->
+
+    <!-- region menu -->
+    <string name="book_detail_fragment_menu_collect">Add to my favorites</string>
+    <string name="book_detail_fragment_menu_score">Score</string>
+    <string name="book_detail_fragment_menu_borrowing_advanced">Reserve book not lent out</string>
+    <string name="book_detail_fragment_menu_reserve">Reserve book has been borrowed</string>
+    <string name="book_detail_fragment_menu_related_borrowing">Relating book</string>
+    <string name="book_detail_fragment_menu_open_in_browser">Open in browser</string>
+    <!-- endregion -->
+
+    <!-- region 收藏相关 -->
+    <string name="book_detail_fragment_collection_handling">Handling Collection Information, Please Wait…</string>
+    <string name="book_detail_fragment_collect_success">Collect Successfully!</string>
+    <string name="book_detail_fragment_collected">The book is already in your favorites!</string>
+    <string name="book_detail_fragment_collect_failed">Collect Failed!</string>
+    <!-- endregion -->
+
+    <!-- region 评分相关 -->
+    <string name="book_detail_fragment_score">Score</string>
+    <string name="book_detail_fragment_score_view_points">Points</string>
+    <string name="book_detail_fragment_score_view_point">Point</string>
+    <string name="book_detail_fragment_score_handling">Handling Score Information, Please Wait…</string>
+    <string name="book_detail_fragment_score_success">Score Success, you gave %1$s score!</string>
+    <string name="book_detail_fragment_score_fail">Score Fail! Please tyr again!</string>
+    <!-- endregion -->
+
+    <string name="book_detail_times" />
+</resources>

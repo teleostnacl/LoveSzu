@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="paper"
+            type="com.teleostnacl.szu.paper.model.PaperModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fragment_edit_paper_basic_information_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:title="@string/paper_edit_paper_basic_information_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/padding_horizontal_paper_edit_paper">
+
+                <!-- 说明 -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:text="@string/paper_edit_paper_basic_information_tips" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 摘要 -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:hint="@string/paper_edit_paper_basic_information_abstract">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={paper.abstractString}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 英文题目 -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:hint="@string/paper_edit_paper_basic_information_title_en">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_edit_paper_basic_information_title_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={paper.titleEn}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 英文摘要 -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:hint="@string/paper_edit_paper_basic_information_abstract_en">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={paper.abstractStringEn}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 关键字 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragment_edit_paper_basic_information_keywords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </RelativeLayout>
+
+                <!-- 增加关键词的按钮 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_basic_information_add_keywords_button"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_basic_information_add_keywords" />
+
+                <!-- 致谢 -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:hint="@string/paper_edit_paper_basic_information_thanks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={paper.thanks}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 完成 -->
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/fragment_edit_paper_basic_information_finish_button"
+                    style="@style/paper_neumorph_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/vertical_margin_paper_edit_paper_item"
+                    android:text="@string/paper_edit_paper_save" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

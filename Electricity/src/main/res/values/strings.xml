@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_electricity">宿舍用电查询</string>
+
+    <string name="item_electricity_loading">正在连接电费系统…</string>
+
+    <string name="electricity_not_in_school">无法连接至电费系统\n请检查当前是否在校园网环境!</string>
+    <string name="electricity_no_history">无历史查询信息!</string>
+    <string name="electricity_have_history">仅显示历史查询的记录</string>
+
+    <string name="electricity_lihu_details">剩余电费详细</string>
+
+    <string name="electricity_set_room">设置查询的房间</string>
+    <string name="electricity_set_room_choose_school_title">请选择校区</string>
+    <string name="electricity_set_room_choose_building_title">请选择楼栋</string>
+    <string name="electricity_set_room_input_room_title">请输入房间号</string>
+
+    <string name="electricity_set_room_choose">请选择…</string>
+
+    <string name="electricity_set_room_rechoose_school">重新选择校区</string>
+    <string name="electricity_set_room_rechoose_building">重新选择楼栋</string>
+
+    <string name="electricity_set_room_choose_building_loading">正在获取楼栋信息…</string>
+
+    <string name="electricity_set_room_check_room_loading">检查房间…</string>
+    <string name="electricity_set_room_input_room_error">请检查房间号!</string>
+
+    <string name="electricity_set_room_exit">退出</string>
+
+    <string name="electricity_set_room_lihu_building">丽湖二期学生宿舍</string>
+
+    <string name="electricity_date_detail_use"><![CDATA[<font color="#baded2"><big><b><tt>用:</b></tt></big></font> %1$.02f<small> 度</small>]]></string>
+    <string name="electricity_date_detail_buy"><![CDATA[<font color="#b0d2c6"><big><b><tt>购:</b></tt></big></font> %1$.02f<small> 度</small>]]></string>
+    <string name="electricity_date_detail_remain"><![CDATA[<font color="#fad46d"><big><b><tt>剩:</b></tt></big></font> %1$.02f<small> 度</small>]]></string>
+
+    <string name="electricity_date_detail_title">电费详细信息 - %s</string>
+
+    <string name="electricity_date_detail_floating_remain"><![CDATA[<big><b><tt>剩余电量: </tt></b>%.02f 度</big>]]></string>
+    <string name="electricity_date_detail_floating_using_sum"><![CDATA[<big><b><tt>总用电量: </tt></b>%.02f 度</big>]]></string>
+    <string name="electricity_date_detail_floating_buying_sum"><![CDATA[<big><b><tt>总购电量: </tt></b>%.02f 度</big>]]></string>
+    <string name="electricity_date_detail_floating_using"><![CDATA[<big><b><tt>当天用电量: </tt></b>%.02f 度</big>]]></string>
+    <string name="electricity_date_detail_floating_buying"><![CDATA[<big><b><tt>当天购电量: </tt></b>%.02f 度</big>]]></string>
+
+    <string name="electricity_buying_detail_person"><![CDATA[<big><b><tt>购买者: </tt></b>%s</big>]]></string>
+    <string name="electricity_buying_detail_time"><![CDATA[<big><b><tt>购买时间: </tt></b>%s</big>]]></string>
+    <string name="electricity_buying_detail_way"><![CDATA[<big><b><tt>购买形式: </tt></b>%s</big>]]></string>
+    <string name="electricity_buying_detail_sum"><![CDATA[<big><b><tt>购买电量: </tt></b>%.02f 度</big>]]></string>
+    <string name="electricity_buying_detail_money"><![CDATA[<big><b><tt>购买金额: </tt></b>%.02f 元</big>]]></string>
+
+
+    <string name="electricity_lihu_ramin_detail_date"><![CDATA[<big><b><tt>更新日期: </tt></b>%s</big>]]></string>
+    <string name="electricity_lihu_ramin_detail"><![CDATA[<big><b><tt>剩余电量: </tt></b>%s 度</big>]]></string>
+    <string name="electricity_lihu_ramin_detail_sending"><![CDATA[<big><b><tt>补助剩余电量: </tt></b>%s 度</big>]]></string>
+    <string name="electricity_lihu_ramin_detail_buying"><![CDATA[<big><b><tt>购买剩余电量 : </tt></b>%s 度</big>]]></string>
+</resources>

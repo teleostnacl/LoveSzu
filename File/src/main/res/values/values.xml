@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_file_download">常用文件下载</string>
+    <string name="file_download">加载常用文件下载列表…</string>
+
+    <string name="file_download_tips"><![CDATA[此列表更新于<b><tt>2023年3月7日</tt></b>, 共%d份文件, 部分链接可能已经失效<\br>短按直接下载, 长按可复制下载链接<\br>部分文件需在<b><tt>校园网</tt></b>内进行下载, 可长按复制WebVpn下载链接, 使用浏览器进行下载]]></string>
+
+    <string name="file_download_long_click_copy">长按复制链接 - %s</string>
+
+    <string name="file_download_long_click_copy_tip"><![CDATA[<b><tt>下载链接:\n</tt></b>%s]]></string>
+    <string name="file_download_long_click_copy_tip_web_vpn"><![CDATA[<b><tt>下载链接:<\br></tt></b>%1$s<\br><\br><b><tt>通过WebVpn下载链接:<\br></tt></b>%2$s]]></string>
+
+    <string name="file_download_search_tip">搜索文件…</string>
+</resources>

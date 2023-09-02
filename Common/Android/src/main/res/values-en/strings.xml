@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network_error">Network error! Please check!</string>
+
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="help">Help</string>
+    <string name="select_all">Select All</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+</resources>

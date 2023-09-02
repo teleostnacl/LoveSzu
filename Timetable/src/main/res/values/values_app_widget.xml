@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="timetable_app_widget_label_day_timetable">今日课程</string>
+
+    <string name="timetable_app_widget_day_timetable_title"><![CDATA[<big>%1$s %2$s</big> 今日课程]]></string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_library_current_borrow_at">借于&#160;</string>
+    <string name="my_library_current_borrow_should_be_back_latest_at">最晚应还于&#160;</string>
+    <string name="my_library_current_borrow_has_been_reserved">该书已经被预约!</string>
+    <string name="my_library_current_borrow_overdue">\n(已逾期)</string>
+    <string name="my_library_current_borrow_will_be_on_due">\n(即将到期)</string>
+
+    <!-- 当前借阅逾期使用的颜色 -->
+    <color name="my_library_current_borrow_overdue_color">#FFDB5A6B</color>
+    <!-- 当前借阅快到期使用的颜色 -->
+    <color name="my_library_current_borrow_be_on_due">#FFF8DF72</color>
+</resources>

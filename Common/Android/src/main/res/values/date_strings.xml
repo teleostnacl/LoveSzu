@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 一周开始为周日 -->
+    <string-array name="week_sun">
+        <item>@string/sun</item>
+        <item>@string/mon</item>
+        <item>@string/tue</item>
+        <item>@string/wed</item>
+        <item>@string/thr</item>
+        <item>@string/fri</item>
+        <item>@string/sat</item>
+    </string-array>
+
+    <!-- 一周开始为周一 -->
+    <string-array name="week_mon">
+        <item>@string/mon</item>
+        <item>@string/tue</item>
+        <item>@string/wed</item>
+        <item>@string/thr</item>
+        <item>@string/fri</item>
+        <item>@string/sat</item>
+        <item>@string/sun</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>@string/January</item>
+        <item>@string/February</item>
+        <item>@string/March</item>
+        <item>@string/April</item>
+        <item>@string/May</item>
+        <item>@string/June</item>
+        <item>@string/July</item>
+        <item>@string/August</item>
+        <item>@string/September</item>
+        <item>@string/October</item>
+        <item>@string/November</item>
+        <item>@string/December</item>
+    </string-array>
+
+    <string name="mon">周一</string>
+    <string name="tue">周二</string>
+    <string name="wed">周三</string>
+    <string name="thr">周四</string>
+    <string name="fri">周五</string>
+    <string name="sat">周六</string>
+    <string name="sun">周日</string>
+
+    <string name="January">一月</string>
+    <string name="February">二月</string>
+    <string name="March">三月</string>
+    <string name="April">四月</string>
+    <string name="May">五月</string>
+    <string name="June">六月</string>
+    <string name="July">七月</string>
+    <string name="August">八月</string>
+    <string name="September">九月</string>
+    <string name="October">十月</string>
+    <string name="November">十一月</string>
+    <string name="December">十二月</string>
+</resources>
